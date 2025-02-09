@@ -1,4 +1,4 @@
-//import TeamCard from "../components/TeamCard";
+//import OurTeam from "../components/TeamCard";
 
 const About = () => {
   return (
