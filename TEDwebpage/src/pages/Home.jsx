@@ -2,7 +2,7 @@ import EventCard from "../components/EventCard";
 
 const Home = () => {
   return (
-    <div className="text-center p-8">
+    <div className="text-center p-8 ">
       <h1 className="text-3xl font-bold text-red-600">Welcome to TEDcMIT</h1>
       <p className="mt-2">Inspiring ideas, spreading knowledge.</p>
 

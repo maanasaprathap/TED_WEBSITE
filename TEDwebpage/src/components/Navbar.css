@@ -1,12 +1,12 @@
 .active {
-    background-color: #1d4ed8;
+    color:rgba(233, 16, 16, 0.93);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0f172a;
+    background-color:rgb(0, 0, 0);
     color: white;
     position: sticky;
     top: 0;
@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 nav ul li a:not(.active):hover {
-    background-color: #172554;
+    color:rgba(201, 17, 14, 0.71);
 }
 
 nav .menu {

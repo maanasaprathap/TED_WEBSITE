@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { div } from "framer-motion/client";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaBook } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
@@ -245,7 +246,7 @@ const About = () => {
     
   ];
 
-  return (
+  return ( <div className="p-8 bg-black dark:bg-black ">
     <motion.div
       style={{
         backgroundImage: "url('/assets/Team_Images/background_image.avif')",
@@ -382,7 +383,7 @@ const About = () => {
   className="text-4xl font-semibold text-red-400 transition-all hover:text-red-300 inline-flex items-center"
 >
 <FaUsers size={32} className="mr-2" />
-  OUR TEAM
+  <h1 className="text-3xl font-bold text-red-600">Our Team</h1>
 </motion.h2>
 
 </motion.div>
@@ -401,7 +402,8 @@ const About = () => {
 ))}
 
       </motion.div>
-    </motion.div>
+    </motion.div> 
+    </div>
   );
 };
 
