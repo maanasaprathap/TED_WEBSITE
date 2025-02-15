@@ -28,45 +28,44 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links */}
-        <ul
-          className={`nav-links ${menuOpen ? "open" : "hidden"} md:flex md:static md:bg-transparent`}
-        >
-          <li>
-            <NavLink to="/" exact activeClassName="active" onClick={() => setMenuOpen(false)}>
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" activeClassName="active" onClick={() => setMenuOpen(false)}>
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/events" activeClassName="active" onClick={() => setMenuOpen(false)}>
-              Events
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/speakers" activeClassName="active" onClick={() => setMenuOpen(false)}>
-              Speakers
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/join-us" activeClassName="active" onClick={() => setMenuOpen(false)}>
-              Join Us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/gallery" activeClassName="active" onClick={() => setMenuOpen(false)}>
-              Gallery
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" activeClassName="active" onClick={() => setMenuOpen(false)}>
-              Contact
-            </NavLink>
-          </li>
-        </ul>
+        <ul className={`nav-links ${menuOpen ? "open" : "hidden"} md:flex md:static md:bg-transparent`}>
+  <li>
+    <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")} onClick={() => setMenuOpen(false)}>
+      Home
+    </NavLink>
+  </li>
+  <li>
+    <NavLink to="/about" className={({ isActive }) => (isActive ? "active" : "")} onClick={() => setMenuOpen(false)}>
+      About
+    </NavLink>
+  </li>
+  <li>
+    <NavLink to="/events" className={({ isActive }) => (isActive ? "active" : "")} onClick={() => setMenuOpen(false)}>
+      Events
+    </NavLink>
+  </li>
+  <li>
+    <NavLink to="/speakers" className={({ isActive }) => (isActive ? "active" : "")} onClick={() => setMenuOpen(false)}>
+      Speakers
+    </NavLink>
+  </li>
+  <li>
+    <NavLink to="/join-us" className={({ isActive }) => (isActive ? "active" : "")} onClick={() => setMenuOpen(false)}>
+      Join Us
+    </NavLink>
+  </li>
+  <li>
+    <NavLink to="/gallery" className={({ isActive }) => (isActive ? "active" : "")} onClick={() => setMenuOpen(false)}>
+      Gallery
+    </NavLink>
+  </li>
+  <li>
+    <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")} onClick={() => setMenuOpen(false)}>
+      Contact
+    </NavLink>
+  </li>
+</ul>
+
       </div>
     </nav>
   );

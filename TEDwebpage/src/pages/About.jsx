@@ -133,7 +133,7 @@ const About = () => {
     {
       name: "Selvalingam B",
       position: "Chairperson",
-       img: "public/assets/Team_Images/selvalingam B.jpg",
+       img: "/assets/Team_Images/Selvalingam B.jpg",
       git: "../alice",
       linkedin: "..alice",
       instagram: "..alice",
@@ -141,7 +141,7 @@ const About = () => {
     {
       name: "Shanthosh S",
       position: "Vice-Chairperson",
-      img: "public/assets/Team_Images/Shanthosh S.jpg",
+      img: "/assets/Team_Images/Shanthosh S.jpg",
       git: "../bob",
       linkedin: "..bob",
       instagram: "..bob",
@@ -149,7 +149,7 @@ const About = () => {
     {
       name: "Shalini M",
       position: "Vice-Chairperson",
-      img: "public/assets/Team_Images/Shalini M.jpg",
+      img: "/assets/Team_Images/Shalini M.jpg",
       git: "../charlie",
       linkedin: "..charlie",
       instagram: "..charlie",
@@ -157,7 +157,7 @@ const About = () => {
     {
       name: "Thennarasu V",
       position: "General Secratory",
-      img: "public/assets/Team_Images/Thennarasu V.jpg",
+      img: "/assets/Team_Images/Thennarasu V.jpg",
       git: "../david",
       linkedin: "..david",
       instagram: "..david",
@@ -165,7 +165,7 @@ const About = () => {
     {
       name: "Anish H",
       position: "Treasurer",
-      img: "public/assets/Team_Images/Anish H.jpg",
+      img: "/assets/Team_Images/Anish H.jpg",
       git: "../eve",
       linkedin: "..eve",
       instagram: "..eve",
@@ -173,7 +173,7 @@ const About = () => {
     {
       name: "Thulasidharan C A",
       position: "Head of Public Relations",
-      img: "public/assets/Team_Images/Thulasidharan C A.jpg",
+      img: "/assets/Team_Images/Thulasidharan C A.jpg",
       git: "../frank",
       linkedin: "..frank",
       instagram: "..frank",
@@ -181,7 +181,7 @@ const About = () => {
     {
       name: "Dhinesh K",
       position: "Head of Public Relations",
-      img: "public/assets/Team_Images/Dhinesh K.jpg",
+      img: "/assets/Team_Images/Dhinesh K.jpg",
       git: "../grace",
       linkedin: "..grace",
       instagram: "..grace",
@@ -189,7 +189,7 @@ const About = () => {
     {
       name: "Dinesh P",
       position: "Head of Event Management",
-      img: "public/assets/Team_Images/Dinesh P.jpg",
+      img: "/assets/Team_Images/Dinesh P.jpg",
       git: "../heidi",
       linkedin: "..heidi",
       instagram: "..heidi",
@@ -197,7 +197,7 @@ const About = () => {
     {
       name: "Sriram K",
       position: "Head of Event Management",
-      img: "public/assets/Team_Images/Sriram K.jpg",
+      img: "/assets/Team_Images/Sriram K.jpg",
       git: "../ivan",
       linkedin: "..ivan",
       instagram: "..ivan",
@@ -205,7 +205,7 @@ const About = () => {
     {
       name: "Dhanush M",
       position: "Head of Design",
-      img: "public/assets/Team_Images/Dhanush M.jpg",
+      img: "/assets/Team_Images/Dhanush M.jpg",
       git: "../judy",
       linkedin: "..judy",
       instagram: "..judy",
@@ -213,7 +213,7 @@ const About = () => {
     {
       name: "Sripushkalai S",
       position: "Head of Design",
-      img: "public/assets/Team_Images/Sripushkalai S.jpg",
+      img: "/assets/Team_Images/Sripushkalai S.jpg",
       git: "../kevin",
       linkedin: "..kevin",
       instagram: "..kevin",
@@ -221,7 +221,7 @@ const About = () => {
     {
       name: "Aishwarya I",
       position: "Head of Content Curation",
-      img: "public/assets/Team_Images/Aishwarya I.jpg",
+      img: "/assets/Team_Images/Aishwarya I.jpg",
       git: "../laura",
       linkedin: "..laura",
       instagram: "../laura",
@@ -229,7 +229,7 @@ const About = () => {
     {
       name: "Manivasagam G",
       position: "Head of Content Curation",
-      img: "public/assets/Team_Images/Manivasagam G.jpg",
+      img: "/assets/Team_Images/Manivasagam G.jpg",
       git: "../mallory",
       linkedin: "..mallory",
       instagram: "..mallory",
@@ -237,7 +237,7 @@ const About = () => {
     {
       name: "Mukesh L",
       position: "Head of Website Development",
-      img: "public/assets/Team_Images/Mukesh L.jpg",
+      img: "/assets/Team_Images/Mukesh L.jpg",
       git: "../niaj",
       linkedin: "..niaj",
       instagram: "..niaj",
