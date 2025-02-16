@@ -270,98 +270,78 @@ const About = () => {
 
 
 
-      {/* Preamble Section */}
-      <motion.div
-  initial={{ opacity: 0, y: 10 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.3, duration: 0.7 }}
-  className="bg-transparent p-6 rounded-lg shadow-2xl transition-transform duration-300 hover:shadow-red-500 mt-6"
->
-<motion.h2
-  initial={{ opacity: 0, y: -10 }}
-  animate={{ opacity: 1, y: 0 }}
-  whileHover={{
-    scale: 0.99,
-    textShadow: "0px 0px 8px rgba(239, 68, 68, 0.8)",
-    transition: { duration: 0.3 }
-  }}
-  transition={{ duration: 0.1 }}
-  className="text-4xl font-semibold text-red-400 transition-all hover:text-red-300 inline-flex items-center"
->
-  <FaBook size={32} className="mr-2" />
-  PREAMBLE
-</motion.h2>
-
-
-        <motion.p
-  initial={{ opacity: 0, y: 10 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.5, duration: 0.5 }}
-  className="mt-3 text-lg leading-relaxed text-gray-200"
-  style={{ fontFamily: "'Cutive Mono', monospace" }}
->
-          TED Club of MIT creates a <strong>potential forum for sharing innovative ideas</strong>.
-          It serves as a platform to <strong>awaken and inspire students</strong> to think independently.
-          With the ultimate goal of <strong>organizing a large-scale TEDx event</strong>, the team works to
-          identify student talents, design themes for interactive talks, and invite potential
-          speakers from <strong>various research fields and professions</strong>.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.5 }}
-          className="mt-3 text-gray-400"
-          style={{ fontFamily: "'Cutive Mono', monospace" }}
-        >
-          TED Club of MIT was founded by a group of final-year students, with guidance from
-          one of the most instrumental teaching staff members of MIT, <strong>Dr. P. Prakash</strong>.
-        </motion.p>
-      </motion.div>
-
-      {/* Goal Section */}
-      <motion.div
-  initial={{ opacity: 0, y: 10 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.5, duration: 0.7 }}
-  className="bg-transparent p-6 rounded-lg shadow-2xl transition-transform duration-300 hover:shadow-red-500 mt-6"
->
-  <motion.h2
-    initial={{ opacity: 0, y: -10 }}
+     <div className="flex flex-col items-center gap-6">
+  {/* Preamble Section */}
+  <motion.div
+    initial={{ opacity: 0, y: 10 }}
     animate={{ opacity: 1, y: 0 }}
-    whileHover={{
-      scale: 0.99,
-      textShadow: "0px 0px 8px rgba(239, 68, 68, 0.8)",
-      transition: { duration: 0.3 }
-    }}
-    transition={{ duration: 0.1 }}
-    className="text-4xl font-semibold text-red-400 transition-all hover:text-red-300 inline-flex items-center"
+    transition={{ delay: 0.3, duration: 0.7 }}
+    className="bg-transparent p-6 rounded-lg shadow-2xl transition-transform duration-300 hover:shadow-red-500 w-full md:w-2/3"
   >
-    <FaBullseye size={32} className="mr-2" />
-    GOAL
-  </motion.h2>
-        <motion.p
-  initial={{ opacity: 0, y: 10 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.5, duration: 0.5 }}
-  className="mt-3 text-lg leading-relaxed text-gray-200"
-  style={{ fontFamily: "'Cutive Mono', monospace" }}
->
-          The ultimate goal of TED Club of MIT is to <strong>organize an annual TEDx event</strong>,
-          making it the flagship event of the organization. Alongside the flagship event,
-          <strong> local events</strong> will be held to create forums for discussion, <strong>sharing ideas</strong>,
-          and <strong>inspiring students</strong> to become idea-makers.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.9, duration: 0.5 }}
-          className="mt-3 text-gray-400"
-          style={{ fontFamily: "'Cutive Mono', monospace" }}
-        >
-          This club also aims to <strong>broaden students' perspectives</strong> and introduce them
-          to the <strong>latest developments in various research fields</strong>.
-        </motion.p>
-      </motion.div>
+    <motion.h2
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      whileHover={{
+        scale: 0.99,
+        textShadow: "0px 0px 8px rgba(239, 68, 68, 0.8)",
+        transition: { duration: 0.3 }
+      }}
+      className="text-4xl font-semibold text-red-400 transition-all hover:text-red-300 inline-flex items-center"
+    >
+      <FaBook size={32} className="mr-2" />
+      PREAMBLE
+    </motion.h2>
+    <motion.p
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.5, duration: 0.5 }}
+      className="mt-3 text-lg leading-relaxed text-gray-200"
+      style={{ fontFamily: "'Cutive Mono', monospace" }}
+    >
+      TED Club of MIT creates a <strong>potential forum for sharing innovative ideas</strong>.
+      It serves as a platform to <strong>awaken and inspire students</strong> to think independently.
+      With the ultimate goal of <strong>organizing a large-scale TEDx event</strong>, the team works to
+      identify student talents, design themes for interactive talks, and invite potential
+      speakers from <strong>various research fields and professions</strong>.
+    </motion.p>
+  </motion.div>
+
+  {/* Goal Section */}
+  <motion.div
+    initial={{ opacity: 0, y: 10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.5, duration: 0.7 }}
+    className="bg-transparent p-6 rounded-lg shadow-2xl transition-transform duration-300 hover:shadow-red-500 w-full md:w-2/3"
+  >
+    <motion.h2
+      initial={{ opacity: 0, y: -10 }}
+      animate={{ opacity: 1, y: 0 }}
+      whileHover={{
+        scale: 0.99,
+        textShadow: "0px 0px 8px rgba(239, 68, 68, 0.8)",
+        transition: { duration: 0.3 }
+      }}
+      className="text-4xl font-semibold text-red-400 transition-all hover:text-red-300 inline-flex items-center"
+    >
+      <FaBullseye size={32} className="mr-2" />
+      GOAL
+    </motion.h2>
+    <motion.p
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.5, duration: 0.5 }}
+      className="mt-3 text-lg leading-relaxed text-gray-200"
+      style={{ fontFamily: "'Cutive Mono', monospace" }}
+    >
+      The ultimate goal of TED Club of MIT is to <strong>organize an annual TEDx event</strong>,
+      making it the flagship event of the organization. Alongside the flagship event,
+      <strong> local events</strong> will be held to create forums for discussion, <strong>sharing ideas</strong>,
+      and <strong>inspiring students</strong> to become idea-makers.
+    </motion.p>
+  </motion.div>
+</div>
+
+
 <br></br>
 <br></br>
       {/* Our Team Section */}

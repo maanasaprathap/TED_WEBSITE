@@ -9,13 +9,12 @@ const Navbar = () => {
   return (
     <nav className="bg-blue-800 p-4 text-white fixed w-full top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <h1
-          className={`text-xl font-bold ${menuOpen ? "hidden" : ""}`}
-        >
-          <span className="text-red-600">TEDc</span>
-          <span className="text-white">MIT</span>
-        </h1>
+        <Link to="/" onClick={() => setMenuOpen(false)}>
+          <h1 className={`text-xl font-bold ${menuOpen ? "hidden" : ""}`}>
+            <span className="text-red-600">TEDc</span>
+            <span className="text-white">MIT</span>
+          </h1>
+        </Link>
 
         {/* Hamburger Icon */}
         <div
@@ -49,11 +48,11 @@ const Navbar = () => {
       Speakers
     </NavLink>
   </li>
-  <li>
+  {/* <li>
     <NavLink to="/join-us" className={({ isActive }) => (isActive ? "active" : "")} onClick={() => setMenuOpen(false)}>
       Join Us
     </NavLink>
-  </li>
+  </li> */}
   <li>
     <NavLink to="/gallery" className={({ isActive }) => (isActive ? "active" : "")} onClick={() => setMenuOpen(false)}>
       Gallery

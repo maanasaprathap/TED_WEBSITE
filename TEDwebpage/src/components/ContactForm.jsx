@@ -8,7 +8,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section class="">
+    <section class="bg-black">
     <div class="container px-6 py-12 mx-auto">
         <div>
 
@@ -28,10 +28,10 @@ const ContactSection = () => {
 
                     <h2 class="mt-4 text-base font-medium text-gray-800 dark:text-white">Email</h2>
                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Our friendly team is here to help.</p>
-                    <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">hello@merakiui.com</p>
+                    <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">tedc@mitindia.edu</p>
                 </div>
 
-                <div>
+                {/* <div>
                     <span class="inline-block p-3 text-red-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -42,16 +42,18 @@ const ContactSection = () => {
                     <h2 class="mt-4 text-base font-medium text-gray-800 dark:text-white">Live chat</h2>
                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Our friendly team is here to help.</p>
                     <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">Start new chat</p>
-                </div>
+                </div> */}
 
-                <div>
+                <div> 
+                    <a href="https://www.google.com/maps/place/Madras+Institute+of+Technology,+Anna+University/@12.9484783,80.1371017,808m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a525fac595c29ff:0xb76082ae18b51418!8m2!3d12.9484731!4d80.1396766!16zL20vMDFjczgx?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D">
                     <span class="inline-block p-3 text-red-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                         </svg>
                     </span>
-                    
+                    </a>
+                   
                     <h2 class="mt-4 text-base font-medium text-red-800 dark:text-white">Location</h2>
                     <p class="mt-2 text-sm text-gray-500 dark:text-gray-400">Madras Institute of Technology</p>
                     <p class="mt-2 text-sm text-blue-500 dark:text-blue-400">Chrompet Chennai-600044</p>
@@ -98,7 +100,7 @@ const ContactSection = () => {
                         <textarea class="block w-full h-20 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-32 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
                     </div>
 
-                    <button class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                    <button class="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-500 rounded-lg hover:bg-transparent focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 hover:shadow-xl hover:shadow-red-500/50">
                         Send message
                     </button>
                 </form>
