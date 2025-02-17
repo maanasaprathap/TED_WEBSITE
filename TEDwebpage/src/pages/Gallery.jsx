@@ -1,6 +1,8 @@
 import { motion, useAnimation } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 const Gallery = () => {
   const galleryItems = [
@@ -10,7 +12,7 @@ const Gallery = () => {
       description:
         "To all the young girls out there (sorry boys) Looking for ways to empower yourself? Has all the feminist talks left you with goosebumps and the urge...",
       image: "/assets/Articles/Feminism/Feminism_1.png",
-      link: "/components/Article_Pages/Comfort_zone.jsx",
+      link: "/feminism",
       date: "January 8, 2022",
     },
     {
@@ -19,7 +21,7 @@ const Gallery = () => {
       description:
         "Think back to the moment when you’ve had too many anxious thoughts about life. When was the last time you did something for the first time?",
       image: "/assets/Articles/ComfortZone_2.jpg",
-      link: "/components/Article_Pages/Comfort_zone.jsx",
+      link: "/comfort-zone",
       date: "July 31, 2021",
     },
     {
@@ -28,7 +30,7 @@ const Gallery = () => {
       description:
         "Still caught up deciding between a 32GB or a 64GB pendrive? Annoyed by the frequent 'not enough space' and 'running out of storage' notifications? Not anymore!",
       image: "/assets/Articles/DNA_2.png",
-      link: "/components/Article_Pages/Comfort_zone.jsx",
+      link: "/dna-storage",
       date: "June 26, 2021",
     },
     {
@@ -37,7 +39,7 @@ const Gallery = () => {
       description:
         "Imposters have infiltrated and now they’re among us. A prestigious conference with renowned tycoons and artists...",
       image: "/assets/Articles/ImpoSyn_1.jpg",
-      link: "/components/Article_Pages/Comfort_zone.jsx",
+      link: "/imposter-syndrome",
       date: "September 18, 2021",
     },
   ];
@@ -47,16 +49,14 @@ const Gallery = () => {
   const controls = useAnimation();
   const containerRef = useRef(null);
 
+  const maxScroll = -(galleryItems.length * 320 - 960); // Adjust based on screen size
+
   const scrollLeft = () => {
-    const newScrollX = scrollX - 300;
-    setScrollX(newScrollX);
-    controls.start({ x: newScrollX });
+    setScrollX((prev) => Math.min(prev + 300, 0));
   };
 
   const scrollRight = () => {
-    const newScrollX = scrollX + 300;
-    setScrollX(newScrollX);
-    controls.start({ x: newScrollX });
+    setScrollX((prev) => Math.max(prev - 300, maxScroll));
   };
 
   useEffect(() => {
@@ -69,7 +69,7 @@ const Gallery = () => {
     let closestIndex = 0;
     let minDistance = Infinity;
 
-    galleryItems.forEach((item, index) => {
+    galleryItems.forEach((_, index) => {
       const cardPosition = index * cardWidth + scrollX;
       const distance = Math.abs(cardPosition - centerPosition);
 
@@ -95,33 +95,32 @@ const Gallery = () => {
       </motion.h1>
       <p className="mb-6 text-center text-white">Check out our exciting articles.</p>
 
-      <div className="absolute top-1/2 left-4 transform -translate-y-1/2 z-10">
-        <button
-          onClick={scrollLeft}
-          className="p-2 bg-white rounded-full shadow-lg hover:bg-gray-200 transition"
-        >
-          <FaArrowLeft className="text-red-500" />
-        </button>
-      </div>
-      <div className="absolute top-1/2 right-4 transform -translate-y-1/2 z-10">
-        <button
-          onClick={scrollRight}
-          className="p-2 bg-white rounded-full shadow-lg hover:bg-gray-200 transition"
-        >
-          <FaArrowRight className="text-red-500" />
-        </button>
-      </div>
+      <button
+        onClick={scrollLeft}
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 z-10 p-2 bg-white rounded-full shadow-lg hover:bg-gray-200 transition"
+        disabled={scrollX === 0}
+      >
+        <FaArrowLeft className="text-red-500" />
+      </button>
+
+      <button
+        onClick={scrollRight}
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 z-10 p-2 bg-white rounded-full shadow-lg hover:bg-gray-200 transition"
+        disabled={scrollX === maxScroll}
+      >
+        <FaArrowRight className="text-red-500" />
+      </button>
 
       <motion.div
         ref={containerRef}
         className="flex space-x-6 w-max items-center"
-        animate={controls}
+        animate={{ x: scrollX }}
         transition={{ ease: "easeOut", duration: 0.5 }}
       >
         {galleryItems.map((item, index) => {
           const isCenter = index === centerCardIndex;
           return (
-            <a key={item.id} href={item.link} className="no-underline">
+            <Link key={item.id} to={item.link} className="no-underline">
               <motion.div
                 className={`bg-white rounded-lg shadow-lg overflow-hidden w-80 mx-2 transform transition duration-300 cursor-pointer ${
                   isCenter ? "scale-110 opacity-100" : "scale-90 opacity-50"
@@ -135,7 +134,7 @@ const Gallery = () => {
                   <p className="text-gray-500 text-xs mb-2">{item.date}</p>
                 </div>
               </motion.div>
-            </a>
+            </Link>
           );
         })}
       </motion.div>

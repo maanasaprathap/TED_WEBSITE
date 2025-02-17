@@ -9,6 +9,10 @@ import Speakers from "./pages/Speakers";
 import JoinUs from "./pages/JoinUs";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
+import Feminism from "./components/Article_Pages/Feminism";
+import ComfortZoneArticle from "./components/Article_Pages/Comfort_zone";
+import DNA_Article from "./components/Article_Pages/DNA";
+import ImposterSyndromeArticle from "./components/Article_Pages/Imposter_syndrome";
 
 function App() {
   return (
@@ -22,6 +26,10 @@ function App() {
         <Route path="/join-us" element={<JoinUs />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/feminism" element={<Feminism />} />
+        <Route path="/comfort-zone" element={<ComfortZoneArticle />} />
+        <Route path="/dna-storage" element={<DNA_Article />} />
+        <Route path="/imposter-syndrome" element={<ImposterSyndromeArticle />} />
       </Routes>
       <Footer />
     </Router>
