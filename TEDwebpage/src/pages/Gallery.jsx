@@ -1,8 +1,7 @@
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Gallery = () => {
   const galleryItems = [
@@ -45,42 +44,36 @@ const Gallery = () => {
   ];
 
   const [scrollX, setScrollX] = useState(0);
-  const [centerCardIndex, setCenterCardIndex] = useState(0);
-  const controls = useAnimation();
   const containerRef = useRef(null);
-
-  const maxScroll = -(galleryItems.length * 320 - 960); // Adjust based on screen size
-
-  const scrollLeft = () => {
-    setScrollX((prev) => Math.min(prev + 300, 0));
-  };
-
-  const scrollRight = () => {
-    setScrollX((prev) => Math.max(prev - 300, maxScroll));
-  };
+  const cardWidth = 320;
+  const cardSpacing = 24;
+  const scrollSpeed = 0.8;
 
   useEffect(() => {
-    if (!containerRef.current) return;
+    let animationFrameId;
+    const animateScroll = () => {
+      setScrollX((prev) => {
+        const newScrollX = prev - scrollSpeed;
+        if (newScrollX <= -galleryItems.length * (cardWidth + cardSpacing)) {
+          return 0;
+        }
+        return newScrollX;
+      });
+      animationFrameId = requestAnimationFrame(animateScroll);
+    };
+    animationFrameId = requestAnimationFrame(animateScroll);
+    return () => cancelAnimationFrame(animationFrameId);
+  }, [galleryItems.length]);
 
-    const containerWidth = containerRef.current.offsetWidth;
-    const cardWidth = 320;
-    const centerPosition = containerWidth / 2;
-
-    let closestIndex = 0;
-    let minDistance = Infinity;
-
-    galleryItems.forEach((_, index) => {
-      const cardPosition = index * cardWidth + scrollX;
-      const distance = Math.abs(cardPosition - centerPosition);
-
-      if (distance < minDistance) {
-        minDistance = distance;
-        closestIndex = index;
-      }
-    });
-
-    setCenterCardIndex(closestIndex);
-  }, [scrollX]);
+  const handleScroll = (direction) => {
+    if (direction === "left") {
+      setScrollX((prev) => Math.min(prev + (cardWidth + cardSpacing), 0));
+    } else {
+      setScrollX((prev) =>
+        Math.max(prev - (cardWidth + cardSpacing), -galleryItems.length * (cardWidth + cardSpacing))
+      );
+    }
+  };
 
   return (
     <div className="p-8 bg-black overflow-hidden relative">
@@ -95,36 +88,24 @@ const Gallery = () => {
       </motion.h1>
       <p className="mb-6 text-center text-white">Check out our exciting articles.</p>
 
-      <button
-        onClick={scrollLeft}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 z-10 p-2 bg-white rounded-full shadow-lg hover:bg-gray-200 transition"
-        disabled={scrollX === 0}
-      >
-        <FaArrowLeft className="text-red-500" />
-      </button>
+      <div className="relative w-full flex items-center">
+        <button
+          className="absolute left-0 z-10 bg-white p-2 rounded-full shadow-md"
+          onClick={() => handleScroll("left")}
+        >
+          <ChevronLeft size={24} />
+        </button>
 
-      <button
-        onClick={scrollRight}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 z-10 p-2 bg-white rounded-full shadow-lg hover:bg-gray-200 transition"
-        disabled={scrollX === maxScroll}
-      >
-        <FaArrowRight className="text-red-500" />
-      </button>
-
-      <motion.div
-        ref={containerRef}
-        className="flex space-x-6 w-max items-center"
-        animate={{ x: scrollX }}
-        transition={{ ease: "easeOut", duration: 0.5 }}
-      >
-        {galleryItems.map((item, index) => {
-          const isCenter = index === centerCardIndex;
-          return (
+        <motion.div
+          ref={containerRef}
+          className="flex space-x-6 w-max items-center"
+          animate={{ x: scrollX }}
+          transition={{ ease: "linear", duration: 0 }}
+        >
+          {galleryItems.map((item) => (
             <Link key={item.id} to={item.link} className="no-underline">
               <motion.div
-                className={`bg-white rounded-lg shadow-lg overflow-hidden w-80 mx-2 transform transition duration-300 cursor-pointer ${
-                  isCenter ? "scale-110 opacity-100" : "scale-90 opacity-50"
-                }`}
+                className="bg-white rounded-lg shadow-lg overflow-hidden w-80 mx-2 transform transition duration-300 cursor-pointer"
                 whileHover={{ scale: 1.05, boxShadow: "0px 0px 15px rgba(239, 68, 68, 0.8)" }}
               >
                 <img src={item.image} alt={item.title} className="w-full h-48 object-cover" />
@@ -135,9 +116,16 @@ const Gallery = () => {
                 </div>
               </motion.div>
             </Link>
-          );
-        })}
-      </motion.div>
+          ))}
+        </motion.div>
+
+        <button
+          className="absolute right-0 z-10 bg-white p-2 rounded-full shadow-md"
+          onClick={() => handleScroll("right")}
+        >
+          <ChevronRight size={24} />
+        </button>
+      </div>
     </div>
   );
 };

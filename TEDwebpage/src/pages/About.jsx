@@ -197,7 +197,7 @@ const About = () => {
     {
       name: "Sriram K",
       position: "Head of Event Management",
-      img: "/assets/Team_Images/Sriram K.jpg",
+      img: "/assets/Team_Images/Sriram K.JPG",
       git: "../ivan",
       linkedin: "..ivan",
       instagram: "..ivan",
