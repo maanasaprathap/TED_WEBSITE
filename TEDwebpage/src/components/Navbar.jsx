@@ -7,7 +7,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-800 p-4 text-white fixed w-full top-0 z-50">
+    <nav className="bg-black p-4 text-white fixed w-full top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" onClick={() => setMenuOpen(false)}>
           <h1 className={`text-xl font-bold ${menuOpen ? "hidden" : ""}`}>
