@@ -1,108 +1,126 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { div } from "framer-motion/client";
 
-// CSS styles (you can add this to a separate CSS file or use a CSS-in-JS solution)
-
-
-const Imposter_Syndrome = () => {
+const ImposterSyndromeArticle = () => {
   return (
-    <div className="bg-black">
-        <motion.section
-          className="py-12 bg-gray-100"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="max-w-6xl mx-auto px-4 grid grid-cols-12 gap-8">
-            {/* Main Article */}
-            <div className="col-span-8  p-6 rounded-lg shadow-lg">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.3, duration: 0.8 }}
-                className="mb-6"
-              >
-                <img
-                  src="/assets/Articles/Feminism/Feminism.jpg"
-                  loading="lazy"
-                  alt="Feminism"
-                  className="w-full rounded-lg shadow-md"
-                />
-              </motion.div>
-              <motion.div
-                className="text-gray-500 text-sm mb-4"
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.5, duration: 0.8 }}
-              >
-                <i className="zmdi zmdi-alarm-check"></i> January 8, 2022
-              </motion.div>
-              <motion.p
-                className="text-gray-700 text-lg leading-relaxed"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.7, duration: 0.8 }}
-              >
-                To all the young girls out there (sorry boys), looking for ways to
-                empower yourself? Has all the feminist talk left you with goosebumps
-                and the urge to do something about it?
-                <br />
-                <br />
-                Here are a few misconceptions about Feminist activities that you
-                might (not) want to follow:
-                <br />
-                1. Indulge in discussions proving men to be wrong
-                <br />
-                2. Break the womanly stereotypes and force others to do so
-                <br />
-                3. Throw in words that sound powerful even if it's out of context
-                <br />
-                <br />
-                Though this might be a bit exaggerated, this is how modern
-                feminists of today are liberating themselves through active feminist
-                movements...
-              </motion.p>
-            </div>
-    
-            {/* Sidebar with Other Articles */}
-            <div className="col-span-4">
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-semibold mb-4">Other Articles</h3>
-                <ul className="space-y-3">
-                  <li>
-                    <Link
-                      to="/feminism"
-                      className="text-blue-500 hover:underline"
-                    >
-                       {/* "To all the young girls out there (sorry boys) Looking for ways to empower yourself? Has all the feminist talks left you with goosebumps and the urge..." */}
-                       Why Feminism went toxic
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/dna-storage"
-                      className="text-blue-500 hover:underline"
-                    >
-                       "Think back to the moment when you’ve had too many anxious thoughts about life. When was the last time you did something for the first time?"
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/imposter-syndrome"
-                      className="text-blue-500 hover:underline"
-                    >
-                       "Imposters have infiltrated and now they’re among us. A prestigious conference with renowned tycoons and artists..."
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </motion.section>
-        </div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="p-8 bg-white text-gray-900 max-w-3xl mx-auto shadow-xl rounded-lg"
+    >
+      <motion.h1
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="text-3xl font-extrabold text-red-500 text-center mb-4"
+        style={{ fontFamily: "'Cutive Mono', monospace" }}
+      >
+        IMPOSTER SYNDROME: TAKING IMPOSTERS BEYOND AMONG US
+      </motion.h1>
+      <p className="text-sm text-gray-500 text-center">By SABHARNA SHANJITHA M - September 18, 2021</p>
+
+      <motion.img
+        src="/assets/Articles/ImpoSyn_1.jpg"
+        alt="Imposter Syndrome"
+        className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      />
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 1 }}
+      >
+        Imposters have infiltrated and now they’re among us. At a prestigious conference with renowned tycoons and artists, Neil Armstrong remarked,
+        <i> “I just look at all these people, and I think, what am I doing here? They’ve made amazing things. I just went where I was sent.”</i>
+        The man who made history was convinced he was an imposter, and there’s a 70% chance you might be one too.
+      </motion.p>
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 1 }}
+      >
+        As psychologists phrase it, imposter syndrome is the feeling of inadequacy that persists despite evident accomplishments. It’s the idea that one’s
+        success was just a mere stroke of luck, coupled with the terror of being exposed for not having what it takes.
+      </motion.p>
+
+      <motion.img
+        src="/assets/Articles/Feeling_inad.jpg"
+        alt="Feeling of inadequacy"
+        className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      />
+
+      <motion.ul
+        className="list-disc pl-5 mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.7, duration: 1 }}
+      >
+        <li>Shy away from receiving compliments</li>
+        <li>Are embarrassed to ask for help</li>
+        <li>Get humiliated when things don’t go your way</li>
+      </motion.ul>
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.9, duration: 1 }}
+      >
+        If you can relate to most of these, join the club. To compensate for such feelings, people tend to become procrastinators or end up as perfectionists, thus attributing the outcome to either luck or extra effort.
+      </motion.p>
+
+      <motion.img
+        src="/assets/Articles/feeling3.jpg"
+        alt="Ways to overcome imposter syndrome"
+        className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      />
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+      >
+        To combat this feeling of phoniness, speak your heart out to people, make room for your thoughts, and reflect upon them. Achievements are relative,
+        so try broadening your boundaries between winning and losing. Focus solely on accomplishments you’ve made and own your success!
+      </motion.p>
+
+      <motion.p
+        className="mb-4 font-semibold text-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 1 }}
+      >
+        “Everyone asks who is the imposter, never how’s the imposter.”
+      </motion.p>
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.4, duration: 1 }}
+      >
+        Imposters aren’t meant to be voted off. They’re real, and the possibility of one being near you is high. A little pat on their back or genuine validation would do wonders.
+      </motion.p>
+
+      <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
+        <Link to="/" className="text-red-500 hover:underline">← Back to Gallery</Link>
+      </motion.div>
+    </motion.div>
   );
 };
 
-export default Imposter_Syndrome;
+export default ImposterSyndromeArticle;

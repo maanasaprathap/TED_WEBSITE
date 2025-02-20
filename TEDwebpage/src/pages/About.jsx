@@ -298,11 +298,10 @@ const About = () => {
       className="mt-3 text-lg leading-relaxed text-gray-200"
       style={{ fontFamily: "'Cutive Mono', monospace" }}
     >
-      TED Club of MIT creates a <strong>potential forum for sharing innovative ideas</strong>.
-      It serves as a platform to <strong>awaken and inspire students</strong> to think independently.
-      With the ultimate goal of <strong>organizing a large-scale TEDx event</strong>, the team works to
-      identify student talents, design themes for interactive talks, and invite potential
-      speakers from <strong>various research fields and professions</strong>.
+      To cultivate a vibrant community of innovators at MIT by fostering the exchange of ideas through
+local forums we aim to empower students to think critically, share their unique perspectives, and
+engage with diverse voices across various fields. The TED Club of MIT ignites intellectual
+curiosity and broadens student perspectives
     </motion.p>
   </motion.div>
 
@@ -333,10 +332,12 @@ const About = () => {
       className="mt-3 text-lg leading-relaxed text-gray-200"
       style={{ fontFamily: "'Cutive Mono', monospace" }}
     >
-      The ultimate goal of TED Club of MIT is to <strong>organize an annual TEDx event</strong>,
-      making it the flagship event of the organization. Alongside the flagship event,
-      <strong> local events</strong> will be held to create forums for discussion, <strong>sharing ideas</strong>,
-      and <strong>inspiring students</strong> to become idea-makers.
+     With a goal of organizing a TEDx event on a huge scale, this club would work to identify the
+inherent talent of students with direct insight and to design a theme to conduct interactive talks.
+The club would also inspire students to think from a broader perspective and introduce them to
+newer developments in all research fields of interest of students. The club would also identify and
+invite potential speakers of various research fields and professions.
+
     </motion.p>
   </motion.div>
 </div>
