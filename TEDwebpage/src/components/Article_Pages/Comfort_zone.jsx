@@ -1,92 +1,119 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const ComfortZoneArticle = () => {
+const ImposterSyndromeArticle = () => {
   return (
-    <motion.section
-      className="py-12 bg-black text-white"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="p-8 bg-white text-gray-900 max-w-3xl mx-auto shadow-xl rounded-lg"
     >
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-12 gap-8">
-        {/* Main Article */}
-        <div className="md:col-span-8 p-6 rounded-lg shadow-lg bg-black">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="mb-6"
-          >
-            <img
-              src="/assets/Articles/Feminism/Feminism.jpg"
-              loading="lazy"
-              alt="Feminism"
-              className="w-full rounded-lg shadow-md"
-            />
-          </motion.div>
-          <motion.div
-            className="text-gray-400 text-sm mb-4"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-          >
-            <i className="zmdi zmdi-alarm-check"></i> January 8, 2022
-          </motion.div>
-          <motion.p
-            className="text-gray-300 text-lg leading-relaxed"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.8 }}
-          >
-            To all the young girls out there (sorry boys), looking for ways to
-            empower yourself? Has all the feminist talk left you with goosebumps
-            and the urge to do something about it?
-            <br />
-            <br />
-            Here are a few misconceptions about Feminist activities that you
-            might (not) want to follow:
-            <br />
-            1. Indulge in discussions proving men to be wrong
-            <br />
-            2. Break the womanly stereotypes and force others to do so
-            <br />
-            3. Throw in words that sound powerful even if it's out of context
-            <br />
-            <br />
-            Though this might be a bit exaggerated, this is how modern
-            feminists of today are liberating themselves through active feminist
-            movements...
-          </motion.p>
-        </div>
+      <motion.h1
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="text-3xl font-extrabold text-red-500 text-center mb-4"
+        style={{ fontFamily: "'Cutive Mono', monospace" }}
+      >
+        Comfort Zone
+      </motion.h1>
+      <p className="text-sm text-gray-500 text-center">By SABHARNA SHANJITHA M - September 18, 2021</p>
 
-        {/* Sidebar with Other Articles */}
-        <div className="md:col-span-4">
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-4 text-white">Other Articles</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link to="/feminism" className="text-blue-400 hover:underline">
-                  Why Feminism went toxic
-                </Link>
-              </li>
-              <li>
-                <Link to="/dna-storage" className="text-blue-400 hover:underline">
-                  "Think back to the moment when you’ve had too many anxious thoughts about life. When was the last time you did something for the first time?"
-                </Link>
-              </li>
-              <li>
-                <Link to="/imposter-syndrome" className="text-blue-400 hover:underline">
-                  "Imposters have infiltrated and now they’re among us. A prestigious conference with renowned tycoons and artists..."
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </motion.section>
+      <motion.img
+        src="/assets/Articles/cf1.jpg"
+        alt="Imposter Syndrome"
+        className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      />
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 1 }}
+      >
+        Think back to the moment when you’ve had too many anxious thoughts about life. When was the last time you did something for the first time?Nothing strikes your mind? Unfortunately, seems like you’re stuck in the dangerously safe place called “comfort zone” and you’re not alone. It’s the entire universe conspiring against you. Look around yourself and you’ll find the world being designed to make everything effortless. Just because it’s sold doesn’t mean we need to buy as it costs your success in the end.
+      </motion.p>
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 1 }}
+      >
+       Being comfort zoned ruins the endless alternate possibilities that might have been rewarding. As one gets satisfied with their current state of living, progress gets replaced with stagnation. If “But I’m good at this” is your reason for not stepping out, heads up!!!!
+
+As “what you’re good at” and “what you happy” are entirely different things. “the Herd takes the trodden path but the one towards the labyrinth creates history”
+
+
+      </motion.p>
+
+      <motion.img
+        src="/assets/Articles/ cf2.jpg"
+        alt="Feeling of inadequacy"
+        className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      />
+
+     
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.9, duration: 1 }}
+      >
+        As Mr.Ankur Warikoo, the entrepreneur and CEO of Groupon states there’s always two worlds out there. The one , is in which we were born without the choice of looks, family and economic status . In the other, you could be literally anything you wish to. To stay in either one is an individual’s choice but often people fail to see that they’re living a lie by being a brick in someone else’s wall.
+
+Picture yourself being born in Iran and think how different things would’ve been Be grateful for your privileges but never let that cloud your thoughts .For majority of people, our basic needs are their impossible luxuries and yet all we strive for at the end is the “safe herd” path. To change the world around, we need to change our own ‘pre defined ‘ world.
+
+      </motion.p>
+
+      <motion.img
+        src="/assets/Articles/cf2.jpg"
+        alt="Ways to overcome imposter syndrome"
+        className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      />
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+      >
+        What was that one thing you promised yourself to start doing in college? Are you still passionate about it or have settled for something less?Never forget that only when you depart from your ordered life, you can truly discover yourself.Here comes the important question “ How not to get comfortable”“ resist the obvious path” is how Warikoo puts it. Do that one thing you’ve always wanted to start, something which terrifies yet excites you.Just keep pushing the boundaries of your confinement until you’ve reached the edge and remembers to embrace it because thats where you truly grow.
+      </motion.p>
+
+      <motion.p
+        className="mb-4 font-semibold text-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 1 }}
+      >
+       
+      </motion.p>
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.4, duration: 1 }}
+      >
+       
+      </motion.p>
+     
+      <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
+        <Link to="/" className="text-red-500 hover:underline">← Back to Gallery</Link>
+      </motion.div>
+    </motion.div>
   );
 };
 
-export default ComfortZoneArticle;
+export default ImposterSyndromeArticle;
