@@ -103,10 +103,10 @@ const Events = ({ events = eventsData }) => {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
-        className="text-4xl font-extrabold text-red-500 drop-shadow-lg text-center"
+        className="text-4xl font-extrabold text-red-600 drop-shadow-lg text-center"
         style={{ fontFamily: "'Cutive Mono', monospace" }}
       >
-        Past Events
+        PAST EVENTS
       </motion.h1>
       <p className="mb-6 text-center text-white">Explore our past events and activities.</p>
 
