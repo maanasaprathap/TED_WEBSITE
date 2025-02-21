@@ -68,7 +68,7 @@ const ContactSection = () => {
               </span>
               <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Phone</h2>
               <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">Mon-Fri from 8am to 5pm.</p>
-              <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">+1 (555) 000-0000</p>
+              <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">+91 80567 66785</p>
             </div>
           </div>
 

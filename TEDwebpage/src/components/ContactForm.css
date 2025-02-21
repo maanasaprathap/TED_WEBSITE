@@ -1,5 +1,5 @@
 .contact-our-area {
-  background-color: #f4f4f4; /* Light gray background */
+  background-color:rgb(0, 0, 0); /* Light gray background */
   padding: 100px 0; /* Add padding for spacing */
 }
 
@@ -16,7 +16,7 @@
 }
 
 .contact-information {
-  background-color: #ffffff;
+  background-color:rgb(0, 0, 0);
   padding: 30px;
   border-radius: 8px; /* Rounded corners for smooth effect */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
