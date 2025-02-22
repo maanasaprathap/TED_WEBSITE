@@ -54,16 +54,16 @@ const eventsData = [
   },
   {
     id: 7,
-    title: "AI & ML Workshop",
-    description: "Hands-on experience in AI and ML with industry experts.",
+    title: "Navigating your 20s",
+    description: "Navigating your 20s with the most awaited event of TEDcMIT - Innovate 24 happened on February 29 2023 at the Rajam Hall in MIT Campus. As the name suggests, this year's Innovate had an innovative theme",
     image: "/assets/Events/2024/Innovate-24.jpeg",
     link: "/innovate'24",
     date: "February 29 2023",
   },
   {
     id: 8,
-    title: "Hackathon 2025",
-    description: "Compete with top coders and showcase your skills in a 24-hour hackathon.",
+    title: "Blueprints of success",
+    description: "Success is like a vibrant. blank canvas just waiting for you to bring it to life. Your passions, talents, and wildes dreams are the bold colors that will transform it into something extraordinary.",
     image: "/assets/Events/2024/orginate-24.jpg",
     link: "/orginate'24",
     date: "November 15 2024",
@@ -103,10 +103,10 @@ const Events = ({ events = eventsData }) => {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
-        className="text-4xl font-extrabold text-red-500 drop-shadow-lg text-center"
+        className="text-4xl font-extrabold text-red-600 drop-shadow-lg text-center"
         style={{ fontFamily: "'Cutive Mono', monospace" }}
       >
-        Past Events
+        PAST EVENTS
       </motion.h1>
       <p className="mb-6 text-center text-white">Explore our past events and activities.</p>
 

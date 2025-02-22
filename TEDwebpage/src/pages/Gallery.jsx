@@ -81,10 +81,10 @@ const Gallery = () => {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7 }}
-        className="text-4xl font-extrabold text-red-500 drop-shadow-lg text-center"
+        className="text-4xl font-extrabold text-red-600 drop-shadow-lg text-center"
         style={{ fontFamily: "'Cutive Mono', monospace" }}
       >
-        Gallery
+        GALLERY
       </motion.h1>
       <p className="mb-6 text-center text-white">Check out our exciting articles.</p>
 
