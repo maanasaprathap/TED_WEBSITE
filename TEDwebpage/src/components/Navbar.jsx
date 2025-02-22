@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" onClick={() => setMenuOpen(false)}>
           <h1 className={`text-xl font-bold ${menuOpen ? "hidden" : ""}`}>
-            <span className="text-red-600">TEDc</span>
+            <span className="text-red-600">TEDc </span>
             <span className="text-white">MIT</span>
           </h1>
         </Link>
