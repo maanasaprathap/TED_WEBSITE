@@ -1,20 +1,19 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
-export const Innovate_19 = () =>{
-    return(
-   <div className="p-8 bg-black min-h-screen flex flex-col overflow-hidden relative">
+export const Innovate_19 = () => {
+  return (
+    <div className="p-8 bg-black min-h-screen flex flex-col overflow-hidden relative pb-24">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="p-8 bg-black text-white max-w-3xl mx-auto shadow-xl rounded-lg"
+        className="p-6 bg-gray-900 text-white max-w-4xl mx-auto shadow-lg rounded-lg"
       >
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="text-3xl font-extrabold text-red-500 text-center mb-4"
+          className="text-3xl font-extrabold text-red-500 text-center"
         >
           Breaking Barriers
         </motion.h1>
@@ -27,38 +26,62 @@ export const Innovate_19 = () =>{
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
         />
-        <motion.p
-          className="mb-4"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 1 }}
-        >
-          <strong>Verbalized spotlights of the event</strong><br></br>
-
-Lighting of the Kuthu Vilaku by the dignitaries
-Welcome address from Dr.P.Prakash, President, TEDc MIT
-Presidential address from Prof. Dr.T.Thyagarajan, The Dean, MIT<br></br>
-<br />
-
-<strong>Rhetoricians of INNOVATE'19</strong><br />
-
-Ms. Vanathi Balasubramaniyam | Founder of Non Governmental Organisation - 'ThatsMyChild'
-
-Soundarya Lakshmi Narayanan | Student - Entrepreneur and CEO of 'NxtStep Robotics'
-
-Mr.Jagan | stand-up comedian
-
-Ms.Malini Jeevarathnam | Film maker and Social activist
-
-
-Online games were conducted by the club through social media for motivating the enthusiastic audience.
-
-TEDc MIT takes privilege in thanking all the club members, dignitaries, speakers of the show and our exuberant audience for making the event a memorable one.We are eager to present you more of such interesting events very soon!
-
-
-        </motion.p>
-        
+        <p className="text-gray-300">
+          INNOVATE 2019 commenced with a grand opening, setting the stage for a revolutionary discourse on breaking barriers.
+        </p>
+        <p className="text-lg font-semibold text-red-500 mt-6">Event Highlights</p>
+        <ul className="list-disc list-inside text-gray-300 space-y-2">
+          <li>Lighting of the Kuthu Vilaku by the dignitaries</li>
+          <li>Welcome address by Dr. P. Prakash, President, TEDc MIT</li>
+          <li>Presidential address by Prof. Dr. T. Thyagarajan, The Dean, MIT</li>
+        </ul>
+        <p className="text-lg font-semibold text-red-500 mt-6">Speakers</p>
+        <motion.div className="space-y-4">
+          {[{
+            name: "Ms. Vanathi Balasubramaniyam | Founder, NGO - 'ThatsMyChild'",
+            image: "/assets/Events/2019/guest-1.jpg",
+            description: "Ms. Vanathi inspired the audience with her journey in social entrepreneurship, emphasizing the power of grassroots activism."
+          }, {
+            name: "Soundarya Lakshmi Narayanan | Student-Entrepreneur, CEO of 'NxtStep Robotics'",
+            image: "/assets/Events/2019/guest-2.jpg",
+            description: "Soundarya shared insights into the startup ecosystem and the role of innovation in shaping the future."
+          }, {
+            name: "Mr. Jagan | Stand-up Comedian",
+            image: "/assets/Events/2019/guest-3.jpg",
+            description: "Mr. Jagan brought humor and wisdom, discussing the importance of laughter in overcoming challenges."
+          }, {
+            name: "Ms. Malini Jeevarathnam | Filmmaker and Social Activist",
+            image: "/assets/Events/2019/guest-4.jpg",
+            description: "Ms. Malini delved into the role of media in driving social change and breaking stereotypes."
+          }].map((speaker, index) => (
+            <motion.div
+              key={index}
+              className="flex items-center space-x-4"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 * index, duration: 0.7 }}
+            >
+              <motion.img
+                src={speaker.image}
+                alt={speaker.name}
+                className="w-60 h-60 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1 }}
+              />
+              <div>
+                <h3 className="text-lg font-semibold text-red-400">{index + 1}. {speaker.name}</h3>
+                <p className="text-gray-300">{speaker.description}</p>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+        <p className="text-lg font-semibold text-red-500 mt-6">After Events</p>
+        <p className="text-gray-300">
+          Online games and interactive sessions were held to engage the audience. TEDc MIT extends heartfelt gratitude to all speakers, dignitaries, and participants for making the event a resounding success. Stay tuned for more inspiring events!
+        </p>
+        <p className="text-lg font-bold text-red-500 text-center mt-6">INSPIRE. INNOVATE. INVENT.</p>
       </motion.div>
     </div>
-    );
-}
+  );
+};
