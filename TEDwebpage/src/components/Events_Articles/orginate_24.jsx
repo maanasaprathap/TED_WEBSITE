@@ -20,7 +20,7 @@ export const Originate_24 = () => {
         </motion.h1>
         <p className="text-sm text-gray-500 text-center">TEDcMIT - ORIGINATE 24</p>
         <motion.img
-          src="/assets/Events/2024/originate-24.jpg"
+          src="/assets/Events/2024/orginate-24.jpg"
           alt="Originate 24"
           className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
           initial={{ opacity: 0, scale: 0.9 }}

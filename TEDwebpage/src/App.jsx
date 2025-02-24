@@ -12,15 +12,15 @@ import Feminism from "./components/Article_Pages/Feminism";
 import ComfortZoneArticle from "./components/Article_Pages/Comfort_zone";
 import DNA_Article from "./components/Article_Pages/DNA";
 import ImposterSyndromeArticle from "./components/Article_Pages/Imposter_syndrome";
-import { Innovate_18 } from "./components/Events_Articles/innovate'18";
-import { Innovate_19 } from "./components/Events_Articles/innovate'19";
-import { Innovate_19_2 } from "./components/Events_Articles/innovate'19.2.0";
-import { Innovate_21 } from "./components/Events_Articles/innovate'21";
-import { Innovate_22 } from "./components/Events_Articles/innovate'22";
-import { Innovate_23 } from "./components/Events_Articles/innovate'23";
+import { Innovate_18 } from "./components/Events_Articles/innovate_18";
+import { Innovate_19 } from "./components/Events_Articles/innovate_19";
+import { Innovate_19_2 } from "./components/Events_Articles/innovate_19.2.0";
+import { Innovate_21 } from "./components/Events_Articles/innovate_21";
+import { Innovate_22 } from "./components/Events_Articles/innovate_22";
+import { Innovate_23 } from "./components/Events_Articles/innovate_23";
 
-import { Innovate_24 } from "./components/Events_Articles/innovate'24";
-import { Originate_24 } from "./components/Events_Articles/originate'24";
+import { Innovate_24 } from "./components/Events_Articles/innovate_24";
+import { Originate_24 } from "./components/Events_Articles/orginate_24";
 
 
 

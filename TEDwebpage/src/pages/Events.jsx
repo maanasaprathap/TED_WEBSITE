@@ -5,12 +5,44 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const eventsData = [
   {
-    id: 1,
-    title: "Out of the Box",
-    description: "Ever wanna time travel? Designed your own world you dreamt of one day? Had a debate on Marvel or DC?INNOVATE 2018 version 2.0 is a TED inspired event",
-    image: "/assets/Events/2018/innovate-2k18.png",
-    link: "/innovate'18",
-    date: "September 15, 2018",
+    id: 8,
+    title: "Blueprints of success",
+    description: "Success is like a vibrant. blank canvas just waiting for you to bring it to life. Your passions, talents, and wildes dreams are the bold colors that will transform it into something extraordinary.",
+    image: "/assets/Events/2024/orginate-24.jpg",
+    link: "/originate_24",
+    date: "November 15 2024",
+  },
+  {
+    id: 7,
+    title: "Navigating your 20s",
+    description: "Navigating your 20s with the most awaited event of TEDcMIT - Innovate 24 happened on February 29 2023 at the Rajam Hall in MIT Campus. As the name suggests, this year's Innovate had an innovative theme",
+    image: "/assets/Events/2024/Innovate-24.jpeg",
+    link: "/innovate'24",
+    date: "February 29 2023",
+  },
+  {
+    id: 6,
+    title: "One World One Voice",
+    description: "The most eagerly awaited flagship event of TEDcMIT - Innovate 23 happened on April 2023 at the Rajam Hall in MIT Campus. As the name suggests, this year's Innovate had an innovative",
+    image: "/assets/Events/2023/innovate-23.jpg",
+    link: "/innovate'23",
+    date: "April 28 2023",
+  },
+  {
+    id: 5,
+    title: "Truth and Dare",
+    description: "With pandemic putting our lives to a pause for the past two years, The Ted Club of MIT came back with the most awaited, Innovate 2022 which was held in both Offline and Online mode",
+    image: "/assets/Events/2022/INNOVATE'22_Poster.jpg",
+    link: "/innovate'22",
+    date: "March 19 2022",
+  },
+   {
+    id: 4,
+    title: "Past the Impasse",
+    description: "Innovate was a unique and successfully conducted event amidst a pandemic making it one of its kind. The event was conducted under the theme Past the Impasse.",
+    image: "/assets/Events/2021/innovate2k21_poster.png",
+    link: "/innovate'21",
+    date: "February 12 2021",
   },
   {
     id: 3,
@@ -29,46 +61,14 @@ const eventsData = [
     date: "February 6 2019",
   },
   {
-    id: 4,
-    title: "Past the Impasse",
-    description: "Innovate was a unique and successfully conducted event amidst a pandemic making it one of its kind. The event was conducted under the theme Past the Impasse.",
-    image: "/assets/Events/2021/innovate2k21_poster.png",
-    link: "/innovate'21",
-    date: "February 12 2021",
+    id: 1,
+    title: "Out of the Box",
+    description: "Ever wanna time travel? Designed your own world you dreamt of one day? Had a debate on Marvel or DC?INNOVATE 2018 version 2.0 is a TED inspired event",
+    image: "/assets/Events/2018/innovate-2k18.png",
+    link: "/innovate'18",
+    date: "September 15, 2018",
   },
-  {
-    id: 5,
-    title: "Truth and Dare",
-    description: "With pandemic putting our lives to a pause for the past two years, The Ted Club of MIT came back with the most awaited, Innovate 2022 which was held in both Offline and Online mode",
-    image: "/assets/Events/2022/INNOVATE'22_Poster.jpg",
-    link: "/innovate'22",
-    date: "March 19 2022",
-  },
-  {
-    id: 6,
-    title: "One World One Voice",
-    description: "The most eagerly awaited flagship event of TEDcMIT - Innovate 23 happened on April 2023 at the Rajam Hall in MIT Campus. As the name suggests, this year's Innovate had an innovative",
-    image: "/assets/Events/2023/innovate-23.jpg",
-    link: "/innovate'23",
-    date: "April 28 2023",
-  },
-  {
-    id: 7,
-    title: "Navigating your 20s",
-    description: "Navigating your 20s with the most awaited event of TEDcMIT - Innovate 24 happened on February 29 2023 at the Rajam Hall in MIT Campus. As the name suggests, this year's Innovate had an innovative theme",
-    image: "/assets/Events/2024/Innovate-24.jpeg",
-    link: "/innovate'24",
-    date: "February 29 2023",
-  },
-  {
-    id: 8,
-    title: "Blueprints of success",
-    description: "Success is like a vibrant. blank canvas just waiting for you to bring it to life. Your passions, talents, and wildes dreams are the bold colors that will transform it into something extraordinary.",
-    image: "/assets/Events/2024/orginate-24.jpg",
-    link: "/orginate'24",
-    date: "November 15 2024",
-  },
-  
+
 ];
 
 const Events = ({ events = eventsData }) => {
@@ -104,7 +104,7 @@ const Events = ({ events = eventsData }) => {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
-        className="text-4xl font-extrabold text-red-600 drop-shadow-lg text-center"
+        className="text-4xl font-bold text-red-600 text-center mb-8"
         style={{ fontFamily: "'Cutive Mono', monospace" }}
       >
         PAST EVENTS

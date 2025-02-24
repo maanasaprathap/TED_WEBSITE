@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 
 const ImposterSyndromeArticle = () => {
   return (
+    <div className="p-8 bg-black min-h-screen flex flex-col overflow-hidden relative pb-24">
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="p-8 bg-white text-gray-900 max-w-3xl mx-auto shadow-xl rounded-lg"
+      className="p-8 bg-black text-white max-w-3xl mx-auto shadow-xl rounded-lg"
     >
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
@@ -113,6 +114,7 @@ Picture yourself being born in Iran and think how different things would’ve be
         <Link to="/" className="text-red-500 hover:underline">← Back to Gallery</Link>
       </motion.div>
     </motion.div>
+    </div>
   );
 };
 

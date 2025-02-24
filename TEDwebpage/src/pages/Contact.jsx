@@ -10,7 +10,7 @@ const Contact = () => {
       transition={{ duration: 0.5 }} // Smooth transition
       className="p-8 bg-black dark:bg-black"
     >
-      <h1 className="text-3xl font-bold text-red-600">CONTACT US</h1>
+      <h1 className="text-4xl font-bold text-red-600 text-center mb-8">CONTACT US</h1>
       <ContactSection />
     </motion.div>
   );

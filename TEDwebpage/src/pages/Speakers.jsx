@@ -137,7 +137,7 @@ const Speakers = () => {
         {speakers.map((speaker, index) => (
           <motion.div
             key={index}
-            className="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center"
+            className="bg-black rounded-lg shadow-lg p-4 flex flex-col items-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: index * 0.2 }}
@@ -150,8 +150,8 @@ const Speakers = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1 }}
             />
-            <h3 className="text-lg font-semibold text-center">{speaker.name}</h3>
-            <p className="text-center text-gray-700 text-sm mt-2">{speaker.description}</p>
+            <h3 className="text-lg text-white font-semibold text-center">{speaker.name}</h3>
+            <p className="text-center text-white text-sm mt-2">{speaker.description}</p>
           </motion.div>
         ))}
       </div>

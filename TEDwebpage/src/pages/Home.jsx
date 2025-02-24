@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import EventCard from "../components/EventCard";
+import { Link } from "react-router-dom";
+import About from "./About";
 
 const Home = () => {
   return (
@@ -102,6 +104,7 @@ const Home = () => {
           />
         </motion.div>
       </div>
+    
     </div>
   );
 };
