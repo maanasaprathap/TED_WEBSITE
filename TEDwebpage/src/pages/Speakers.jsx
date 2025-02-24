@@ -18,7 +18,79 @@ const Speakers = () => {
             name: "Mr. Senthil Raj | Founder of On the Streets Musical Community",
             image: "/assets/Events/2022/guest-4.jpg",
             description: ""
-          }, {
+          }, 
+          {
+            name: "Dr. Jangid IPS",
+            image: "/assets/Events/2022/Jangid IPS.jpeg",
+            description: ""
+          },
+          {
+            name: "Raj Mohan | Director",
+            image: "/assets/Events/2022/Rajmohan.jpeg",
+            description: ""
+          },
+          {
+            name: "Mrs Bharathi Baskar | Tamil Orator",
+            image: "/assets/Events/2021/bharathi baskar.jpeg",
+            description: ""
+          },
+           {
+            name: "Dr. Sivaraman",
+            image: "/assets/Events/2022/Dr.Sivaraman.jpeg",
+            description: ""
+          },
+          {
+            name: "RJ Vignesh - BlackSheep Entertainment",
+            image: "/assets/Events/2024/rj vignesh.JPG",
+            description: ""
+          },
+           {
+            name: "Mr TamilSelvan |  Founder of TamilTech",
+            image: "/assets/Events/2024/tamilselvan.JPG",
+            description: ""
+          },
+          {
+            name: "Mr. Anbuthasan | Actor",
+            image: "/assets/Events/2024/Anbuthasan.JPG",
+            description: ""
+          },
+          {
+            name: "Ms Kritanya Krishnamurthy | trainer and a coach",
+            image: "/assets/Events/2024/kirtana.JPG",
+            description: ""
+          },
+          {
+            name: "Agnel John | Error Makes Clever",
+            image: "/assets/Events/2024/Angel John.JPG",
+            description: ""
+          }, 
+          { name: "Vikkals of Vikram | Actor",
+            image: "/assets/Events/2024/vikkals.jpeg",
+            description: ""},
+
+          { name: "Epaphra | Entrepreneur",
+            image: "/assets/Events/2024/Epaphra.jpeg",
+            description: ""},
+
+          {name: "Mr Sethu Raman | Entrepreneur",
+            image: "/assets/Events/2024/sethu raman.jpeg",
+            description: ""},
+          {
+             name: "Mr. Murali Shankarnarayanan",
+            image: "/assets/Events/2021/mike murali.jpeg",
+            description: ""
+          },
+          {
+             name: "Mr. Sumanth C",
+            image: "/assets/Events/2021/sumanth c raman.jpeg",
+            description: ""
+          },
+          {
+             name: "Mr. Vijay Anandh",
+            image: "/assets/Events/2021/Vijay Anandh.jpeg",
+            description: ""
+          },
+          {
             name: "Mr. Mathur Sathya",
             image: "/assets/Events/2022/guest-5.jpg",
             description: ""
@@ -73,16 +145,7 @@ const Speakers = () => {
             image: "/assets/Events/2019/guest-4.jpg",
             description: ""
           },
-          {
-            name: "Dr. Jangid IPS",
-            image: "/assets/Events/2022/Jangid IPS.jpeg",
-            description: ""
-          },
-          {
-            name: "Raj Mohan | Director",
-            image: "/assets/Events/2022/Rajmohan.jpeg",
-            description: ""
-          },
+          
           {
             name: "Yuva Prakash - Athlete",
             image: "/assets/Events/2022/Yuvaprakash.jpeg",
@@ -93,46 +156,33 @@ const Speakers = () => {
             image: "/assets/Events/2022/AArthi_sp robotics.jpeg",
             description: ""
           },
-          {
-            name: "Dr. Sivaraman",
-            image: "/assets/Events/2022/Dr.Sivaraman.jpeg",
-            description: ""
-          },
-          {
-            name: "RJ Vignesh - BlackSheep Entertainment",
-            image: "/assets/Events/2024/rj vignesh.JPG",
-            description: ""
-          },
+         
           {
             name: "Ms. Nikila Shankar | Actor",
             image: "/assets/Events/2024/nikila.JPG",
             description: ""
           },
-          {
-            name: "Mr TamilSelvan |  Founder of TamilTech",
-            image: "/assets/Events/2024/tamilselvan.JPG",
-            description: ""
-          },
-          {
-            name: "Mr. Anbuthasan | Actor",
-            image: "/assets/Events/2024/Anbuthasan.JPG",
-            description: ""
-          },
-          {
-            name: "Ms Kritanya Krishnamurthy | trainer and a coach",
-            image: "/assets/Events/2024/kirtana.JPG",
-            description: ""
-          },
-          {
-            name: "Agnel John | Error Makes Clever",
-            image: "/assets/Events/2024/Angel John.JPG",
-            description: ""
-          },
+          {name: "Ms Iswarya | Content Creator",
+            image: "/assets/Events/2024/iswarayagp.jpeg",
+            description: ""},
+          {name: "Ms Jaya Jagdeesh | Entrepreneur",
+            image: "/assets/Events/2024/jaya_jagdeesh.jpeg",
+            description: ""},
+         
   ];
 
   return (
     <div className="p-8 bg-black min-h-screen flex flex-col items-center">
-      <h1 className="text-4xl font-bold text-red-600 text-center mb-8">PAST SPEAKERS</h1>
+      <motion.h1
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7 }}
+        className="text-4xl font-bold text-red-600 text-center mb-8"
+        style={{ fontFamily: "'Cutive Mono', monospace" }}
+      >
+        PAST SPEAKER
+      </motion.h1>
+      <p className="mb-6 text-center text-white">Check out our past speakers who increased value of our stage.</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">
         {speakers.map((speaker, index) => (
           <motion.div

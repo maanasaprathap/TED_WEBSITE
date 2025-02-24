@@ -18,7 +18,6 @@ import { Innovate_19_2 } from "./components/Events_Articles/innovate_19.2.0";
 import { Innovate_21 } from "./components/Events_Articles/innovate_21";
 import { Innovate_22 } from "./components/Events_Articles/innovate_22";
 import { Innovate_23 } from "./components/Events_Articles/innovate_23";
-
 import { Innovate_24 } from "./components/Events_Articles/innovate_24";
 import { Originate_24 } from "./components/Events_Articles/orginate_24";
 
