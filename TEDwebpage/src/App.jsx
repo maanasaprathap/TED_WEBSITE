@@ -18,8 +18,11 @@ import { Innovate_19_2 } from "./components/Events_Articles/innovate'19.2.0";
 import { Innovate_21 } from "./components/Events_Articles/innovate'21";
 import { Innovate_22 } from "./components/Events_Articles/innovate'22";
 import { Innovate_23 } from "./components/Events_Articles/innovate'23";
+
 import { Innovate_24 } from "./components/Events_Articles/innovate'24";
-import { Orginate_24 } from "./components/Events_Articles/orginate'24";
+import { Originate_24 } from "./components/Events_Articles/originate'24";
+
+
 
 function App() {
   return (
@@ -42,8 +45,9 @@ function App() {
         <Route path="/innovate'21" element={<Innovate_21 />} />
         <Route path="/innovate'22" element={<Innovate_22 />} />
         <Route path="/innovate'23" element={<Innovate_23 />} />
+  
         <Route path="/innovate'24" element={<Innovate_24 />} />
-        <Route path="/orginate'24" element={<Orginate_24 />} />
+        <Route path="/originate'24" element={<Originate_24 />} />
 
       </Routes>
       <Footer />

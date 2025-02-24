@@ -68,6 +68,7 @@ const eventsData = [
     link: "/orginate'24",
     date: "November 15 2024",
   },
+  
 ];
 
 const Events = ({ events = eventsData }) => {
