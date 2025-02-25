@@ -7,98 +7,153 @@ import { Link } from "react-router-dom";
 
 const Feminism = () => {
   return (
-        <motion.section
-          className="py-12 bg-gray-100"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="max-w-6xl mx-auto px-4 grid grid-cols-12 gap-8">
-            {/* Main Article */}
-            <div className="col-span-8  p-6 rounded-lg shadow-lg">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.3, duration: 0.8 }}
-                className="mb-6"
-              >
-                <img
-                  src="/assets/Articles/Feminism/Feminism.jpg"
-                  loading="lazy"
-                  alt="Feminism"
-                  className="w-full rounded-lg shadow-md"
-                />
-              </motion.div>
-              <motion.div
-                className="text-gray-500 text-sm mb-4"
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.5, duration: 0.8 }}
-              >
-                <i className="zmdi zmdi-alarm-check"></i> January 8, 2022
-              </motion.div>
-              <motion.p
-                className="text-gray-700 text-lg leading-relaxed"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.7, duration: 0.8 }}
-              >
-                To all the young girls out there (sorry boys), looking for ways to
-                empower yourself? Has all the feminist talk left you with goosebumps
-                and the urge to do something about it?
-                <br />
-                <br />
-                Here are a few misconceptions about Feminist activities that you
-                might (not) want to follow:
-                <br />
-                1. Indulge in discussions proving men to be wrong
-                <br />
-                2. Break the womanly stereotypes and force others to do so
-                <br />
-                3. Throw in words that sound powerful even if it's out of context
-                <br />
-                <br />
-                Though this might be a bit exaggerated, this is how modern
-                feminists of today are liberating themselves through active feminist
-                movements...
-              </motion.p>
-            </div>
-    
-            {/* Sidebar with Other Articles */}
-            <div className="col-span-4">
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <h3 className="text-xl font-semibold mb-4">Other Articles</h3>
-                <ul className="space-y-3">
-                  <li>
-                    <Link
-                      to="/feminism"
-                      className="text-blue-500 hover:underline"
-                    >
-                       {/* "To all the young girls out there (sorry boys) Looking for ways to empower yourself? Has all the feminist talks left you with goosebumps and the urge..." */}
-                       Why Feminism went toxic
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/dna-storage"
-                      className="text-blue-500 hover:underline"
-                    >
-                       "Think back to the moment when you’ve had too many anxious thoughts about life. When was the last time you did something for the first time?"
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/imposter-syndrome"
-                      className="text-blue-500 hover:underline"
-                    >
-                       "Imposters have infiltrated and now they’re among us. A prestigious conference with renowned tycoons and artists..."
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </motion.section>
+     <div className="p-8 bg-black min-h-screen flex flex-col overflow-hidden relative pb-24">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="p-8 bg-black text-white max-w-3xl mx-auto shadow-xl rounded-lg"
+    >
+      <motion.h1
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        className="text-3xl font-extrabold text-red-500 text-center mb-4"
+        style={{ fontFamily: "'Cutive Mono', monospace" }}
+      >
+        Are Feminist movements going too far?
+
+      </motion.h1>
+      <p className="text-sm text-gray-500 text-center">-By SABHARNA SHANJITHA M</p>
+
+      <motion.img
+        src="/assets/Articles/Feminism/Feminism_1.png"
+        alt="Feninism"
+        className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      />
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.3, duration: 1 }}
+      >
+       To all the young girls out there ( sorry boys)Looking for ways to empower yourself ?? Has all the feminist talks left you with goosebumps and the urge to do something about it.
+      </motion.p>
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 1 }}
+      >
+        Here are a few misconceptions about Feminist activities that you might (not) want to follow ..
+<li>1.Indulge in discussions proving men to be wrong</li>
+<li>2.Indulge in discussions proving women to be wrong</li>
+<li>3.Throw in words that sound powerful even if it's out of context</li>
+      </motion.p>
+
+      <motion.img
+        src="/assets/Articles/Feminism/Feminism_2.png"
+        alt="feminist"
+        className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      />
+
+      <motion.ul
+        className="list-disc pl-5 mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.7, duration: 1 }}
+      >
+       Though this might be a bit exaggerated , this is how modern feminists of today are liberating themselves through active feminist movement. YES, this is the same protest that years ago had earned the basic " I'm a human too" status to women.But did this lose its momentum and became ANTI-MEN ??? This tarnished reputation is partially due to people who aren’t well-versed on the topic but have a lot of premeditated misperceptions on the characterization of feminists. With celebrities who get their hair chopped down and call it a " liberating and empowering move " to sharing plagiared quotes on feminism, the plight of today's feminism is indeed saddening.
+      </motion.ul>
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.9, duration: 1 }}
+      >
+       As these women fight for their right to dress freely, their freedom to casually abuse men who don't believe in their dominance , there's still a girl out there who could use all this to get that paycheck equal to her male co worker.
+      </motion.p>
+
+      <motion.img
+        src="/assets/Articles/Feminism/Feminism_3.png"
+        alt="equality and freedom"
+        className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      />
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+      >
+        When the picture's too bold, there's a section blaming for being too outgoing and forward. If it's about embracing their own traditional choices , they get called out for being submissive and "wanting to be dominated". It outraged people when feminism looked down upon and demeaned housewives.
+      </motion.p>
+
+      <motion.p
+        className="mb-4 font-semibold text-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 1 }}
+      >
+       The internet was nothing short of chaos with too much unnecessary opinions. Among this , the only takeaway the common people had was that feminists are pushy and argumentative — causing others to get apprehensive about labeling themselves as “feminist," as it often carries a negative connotation
+      </motion.p>
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.4, duration: 1 }}
+      >
+       As all this steals the spotlight , there's still men of position who childishly heckled the honourable minister of women and child development of india. Does feminism cover this too or is it just another personal issue????
+      </motion.p>
+
+      <motion.img
+        src="/assets/Articles/Feminism/Feminism_4.png"
+        alt="equality and freedom"
+        className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      />
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.4, duration: 1 }}
+      >
+        Feminism, distilled down to its absolute core, is about gender equity. The goal of feminism is to create a society in which individuals' genders don't restrict them from an equitable shot at success and happiness .
+      </motion.p>
+
+      <motion.p
+        className="mb-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.4, duration: 1 }}
+      >
+       The fate of feminism is tied to the balance we strike with prioritising issues. Belittling feminism by calling it as a fad wouldn't help nor will blowing up tiny issues The fact that behind each one of this ,lies a tightly woven yet invisible thread of religion to it ,makes the knot even more difficult to unwind.At the end of the day, these issues remain extremely important, and although some in our cultural stratosphere may not yet grasp how to responsibly address them, there will always be strong and intelligent people to look towards help us all to put things in perspective.
+      </motion.p>
+
+     
+
+
+
+      <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
+        <Link to="/" className="text-red-500 hover:underline">← Back to Gallery</Link>
+      </motion.div>
+    </motion.div>
+  </div>
   );
 };
 

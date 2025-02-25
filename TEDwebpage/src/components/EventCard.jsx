@@ -2,7 +2,7 @@ const EventCard = ({ title, date, description, image }) => {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden w-80">
       {/* Event Image */}
-      <img src="/assets/Events/2024/Innovate-24.jpeg" alt={title} className="w-full h-48 object-cover" />
+      <img src="/assets/Events/2025/Innovate-25.jpg" alt={title} className="w-full h-48 object-cover" />
 
 
       {/* Event Details */}

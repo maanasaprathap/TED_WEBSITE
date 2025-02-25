@@ -1,10 +1,19 @@
 import { motion } from "framer-motion";
 import { div } from "framer-motion/client";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { FaBook } from "react-icons/fa";
+import {FaArrowLeft, FaArrowRight, FaBook } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
+import { useState } from "react";
 
 import { FaBullseye } from "react-icons/fa";
+
+const teamImages = [
+  "/assets/group_images/team 2019.jpg",
+  "/assets/group_images/innovate 22.JPG",
+  "/assets/group_images/innovate 23.JPG",
+  "/assets/group_images/team 2024.jpeg",
+  "/assets/group_images/team _2024.jpeg"
+];
 
 // Flip card component for a team member
 const getObjectPosition = (name) => {
@@ -43,6 +52,30 @@ const getObjectPosition = (name) => {
       return "center 60%";
   }
 };
+
+const Group_Images = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % teamImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + teamImages.length) % teamImages.length);
+  };
+
+  return (
+    <div className="relative flex justify-center items-center">
+      <FaArrowLeft className="absolute left-0 cursor-pointer text-white" size={30} onClick={prevSlide} />
+      <img src={teamImages[currentIndex]} alt={`Team ${currentIndex + 1}`} className="w-full max-w-lg rounded-lg shadow-lg" />
+      <FaArrowRight className="absolute right-0 cursor-pointer text-white" size={30} onClick={nextSlide} />
+    </div>
+  );
+};
+
+
+
+
 const TeamCard = ({ member }) => {
   return (
     <div className="w-full h-full" style={{ perspective: "1000px" }}>
@@ -130,6 +163,14 @@ const TeamCard = ({ member }) => {
 const About = () => {
   // An array of 14 team members with dummy details.
   const teamMembers = [
+    { 
+      name: "Dr P Prakash",
+      position: "President",
+      img: "/assets/Team_Images/Prakash_sir.jpeg",
+      git: "../alice",
+      linkedin: "..alice",
+      instagram: "..alice",
+    },
     {
       name: "Selvalingam B",
       position: "Chairperson",
@@ -295,7 +336,7 @@ const About = () => {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.5, duration: 0.5 }}
-      className="mt-3 text-lg leading-relaxed text-gray-200"
+      className="mt-3 text-lg leading-relaxed text-white"
       style={{ fontFamily: "'Cutive Mono', monospace" }}
     >
       To cultivate a vibrant community of innovators at MIT by fostering the exchange of ideas through
@@ -329,7 +370,7 @@ curiosity and broadens student perspectives
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.5, duration: 0.5 }}
-      className="mt-3 text-lg leading-relaxed text-gray-200"
+      className="mt-3 text-lg leading-relaxed text-white"
       style={{ fontFamily: "'Cutive Mono', monospace" }}
     >
      With a goal of organizing a TEDx event on a huge scale, this club would work to identify the
@@ -342,9 +383,27 @@ invite potential speakers of various research fields and professions.
   </motion.div>
 </div>
 
+<div className="p-8 bg-black dark:bg-black">
+      <motion.div
+        
+        className="p-8 min-h-screen bg-cover bg-center"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <motion.h1
+        style={{ fontFamily: "'Cutive Mono', monospace" }}
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
+          className="text-4xl font-bold text-red-600 text-center mb-6"
+        >
+          Meet Our Previous Teams
+        </motion.h1>
+        <Group_Images />
+      </motion.div>
+    </div>
 
-<br></br>
-<br></br>
       {/* Our Team Section */}
       <motion.div
   initial={{ opacity: 0, y: 10 }}
