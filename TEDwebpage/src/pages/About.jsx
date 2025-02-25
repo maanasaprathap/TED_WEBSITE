@@ -163,6 +163,14 @@ const TeamCard = ({ member }) => {
 const About = () => {
   // An array of 14 team members with dummy details.
   const teamMembers = [
+    { 
+      name: "Dr P Prakash",
+      position: "President",
+      img: "/assets/Team_Images/Prakash_sir.jpeg",
+      git: "../alice",
+      linkedin: "..alice",
+      instagram: "..alice",
+    },
     {
       name: "Selvalingam B",
       position: "Chairperson",

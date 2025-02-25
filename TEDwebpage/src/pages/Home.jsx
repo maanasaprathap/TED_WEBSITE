@@ -1,3 +1,4 @@
+/*************  ✨ Codeium Command 🌟  *************/
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import EventCard from "../components/EventCard";
@@ -30,6 +31,7 @@ const Home = () => {
     return () => clearInterval(timer);
   }, []);
 
+  const [scrollY, setScrollY] = useState(0);
   return (
     <div
       className="text-center p-8 min-h-screen flex flex-col justify-center items-center bg-cover bg-center"
@@ -152,4 +154,6 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home; 
+
+/******  437ff387-5330-4114-a91a-e2d1ccd1fff5  *******/
