@@ -1,9 +1,9 @@
-/*************  ✨ Codeium Command 🌟  *************/
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import EventCard from "../components/EventCard";
 import { Link } from "react-router-dom";
 import About from "./About";
+import { div } from "framer-motion/client";
 
 const Home = () => {
   const calculateTimeLeft = () => {
@@ -33,8 +33,9 @@ const Home = () => {
 
   const [scrollY, setScrollY] = useState(0);
   return (
+    <div className="min-h-screen flex flex-col  items-center">
     <div
-      className="text-center p-8 min-h-screen flex flex-col justify-center items-center bg-cover bg-center"
+      className="text-center p-64 pb-8 min-h-screen flex flex-col justify-center items-center bg-cover bg-center"
       style={{
         backgroundImage: "url('assets/home_page/back_ted.jpg')",
         backgroundSize: "cover",
@@ -45,7 +46,7 @@ const Home = () => {
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7 }}
-        className=" font-bold text-white text-4xl md:text-3.5xl drop-shadow-lg text-center mt-[-120px]"
+        className=" font-bold text-white text-4xl md:text-6xl drop-shadow-lg text-center mt-[-120px]"
         style={{
           fontFamily: "'Cutive Mono', monospace",
           textShadow:
@@ -74,7 +75,8 @@ const Home = () => {
       <br />
 
       {/* Upcoming Events Section */}
-      <div className="flex flex-col md:flex-row justify-between w-full px-4 md:px-16 mt-[-20px] items-center">
+      <div className="flex flex-col md:flex-row justify-between w-full px-4 md:px-16 mt-[-20px] items-center gap-y-4 md:gap-x-8"
+>
         {/* Event Card */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -82,7 +84,6 @@ const Home = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="w-full md:w-1/2 flex flex-col items-center md:items-start mt-[-20px]"
         >
-          <br></br>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -107,35 +108,31 @@ const Home = () => {
         </motion.div>
 
         {/* Countdown Timer */}
-<motion.div
-  initial={{ opacity: 0, scale: 0.9 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.7, delay: 0.2 }}
-  className="flex flex-col items-center mt-8 md:mt-20 p-7 rounded-lg shadow-lg text-white border-1 border-white"
->
-  <motion.h2
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.7 }}
-    className="text-2xl md:text-3xl text-red-600 font-semibold"
-  >
-    COUNTDOWN TO EVENT
-  </motion.h2>
-  <div className="text-2xl md:text-3xl font-bold mt-4 inline-flex gap-2">
-    <span>{timeLeft.days}d: </span> 
-    <span>{timeLeft.hours}h: </span> 
-    <span>{timeLeft.minutes}m: </span> 
-    <span>{timeLeft.seconds}s</span>
-  </div>
-</motion.div>
-
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="flex flex-col items-center mt-8 md:mt-10  p-6 rounded-lg shadow-lg  text-white"
+        >
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="text-2xl md:text-3xl text-red-600 font-semibold"
+          >
+            COUNTDOWN TO EVENT
+          </motion.h2>
+          <div className="text-2xl md:text-3xl font-bold mt-4">
+            {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m : {timeLeft.seconds}s
+          </div>
+        </motion.div>
 
         {/* QR Code */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="w-full md:w-1/2 flex flex-col items-center md:items-end mt-[-20px]"
+          className="w-full md:w-1/2 flex flex-col  md:items-end mt-[-20px] mt-8 md:mt-10 mr-[-10]" 
         >
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -149,15 +146,26 @@ const Home = () => {
           <img
             src="assets/home_page/qr-code.jpg"
             alt="Scan QR Code"
-            className="w-70 h-75 border border-white p-2 rounded-lg shadow-lg transition-all duration-300 ease-in-out 
+            className="w-70 h-70 border border-white p-2 rounded-lg shadow-lg transition-all duration-300 ease-in-out 
                       hover:shadow-red-500 hover:scale-105 hover:bg-opacity-80 
                       hover:border-red-400 hover:-rotate-1 hover:skew-x-2 hover:shadow-2xl"
           />
         </motion.div>
       </div>
+
+      
+    </div>
+    <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeInOut" }}
+  className="w-full"
+  id="about"
+>
+  <About />
+</motion.div>
     </div>
   );
 };
 
 export default Home; 
-

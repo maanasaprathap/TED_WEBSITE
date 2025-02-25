@@ -1,24 +1,12 @@
 import { motion } from "framer-motion";
 
 const Speakers = () => {
-  const speakers = [
+ const speakers = [
     {
-            name: "Mr. Suresh Kumar | Founder of Pepul",
-            image: "/assets/Events/2022/guest-1.jpg",
+       name: " Mr. Ubagarampillai Sahayam | Former IAS officer",
+            image: "/assets/Events/2021/sagayam_ias.jpeg",
             description: ""
-          }, {
-            name: "Ms. Padmini Janaki | CEO of Mind and Mom",
-            image: "/assets/Events/2022/guest-2.jpg",
-            description: ""
-          }, {
-            name: "Mr. Sivaraman | Founder of deHub for Architects",
-            image: "/assets/Events/2022/guest-3.jpg",
-            description: ""
-          }, {
-            name: "Mr. Senthil Raj | Founder of On the Streets Musical Community",
-            image: "/assets/Events/2022/guest-4.jpg",
-            description: ""
-          }, 
+    },
           {
             name: "Dr. Jangid IPS",
             image: "/assets/Events/2022/Jangid IPS.jpeg",
@@ -54,6 +42,23 @@ const Speakers = () => {
             image: "/assets/Events/2024/Anbuthasan.JPG",
             description: ""
           },
+          {
+            name: "Mr. Suresh Kumar | Founder of Pepul",
+            image: "/assets/Events/2022/guest-1.jpg",
+            description: ""
+          }, {
+            name: "Ms. Padmini Janaki | CEO of Mind and Mom",
+            image: "/assets/Events/2022/guest-2.jpg",
+            description: ""
+          }, {
+            name: "Mr. Sivaraman | Founder of deHub for Architects",
+            image: "/assets/Events/2022/guest-3.jpg",
+            description: ""
+          }, {
+            name: "Mr. Senthil Raj | Founder of On the Streets Musical Community",
+            image: "/assets/Events/2022/guest-4.jpg",
+            description: ""
+          }, 
           {
             name: "Ms Kritanya Krishnamurthy | trainer and a coach",
             image: "/assets/Events/2024/kirtana.JPG",
@@ -172,7 +177,7 @@ const Speakers = () => {
   ];
 
   return (
-    <div className="p-8 bg-black min-h-screen flex flex-col items-center">
+    <div className="p-16 bg-black min-h-screen flex flex-col items-center">
       <motion.h1
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
