@@ -78,6 +78,9 @@ export const Innovate_19_2 = () => {
                     Online games were conducted via social media to engage the audience. TEDc MIT extends gratitude to all club members, dignitaries, speakers, and the audience for making the event a memorable one. Stay tuned for more inspiring events!
                 </p>
                 <p className="text-lg font-bold text-red-500 text-center mt-6">INSPIRE. INNOVATE. INVENT.</p>
+                <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
+          <Link to="/events" className="text-red-500 hover:underline">← Back to Gallery</Link>
+        </motion.div>
             </motion.div>
         </div>
     );

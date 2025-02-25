@@ -6,6 +6,10 @@ import { FiMenu, FiX } from "react-icons/fi"; // Import icons
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const scrollToAbout = () => {
+  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+};
+
   return (
     <div>
       <nav className="bg-black p-4 text-white w-full top-0 z-50">
@@ -32,15 +36,21 @@ const Navbar = () => {
             } md:flex md:static md:bg-transparent`}
           >
             <li>
-              <NavLink to="/" onClick={() => setMenuOpen(false)}>
-                Home
-              </NavLink>
-            </li>
-            {/* <li>
-              <NavLink to="/about" onClick={() => setMenuOpen(false)}>
-                About
-              </NavLink>
-            </li> */}
+  <NavLink
+    to="/"
+    onClick={() => {
+      setMenuOpen(false);
+      window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top
+    }}
+  >
+    Home
+  </NavLink>
+</li>
+           <li>
+  <button onClick={scrollToAbout} className="nav-button">
+    About
+  </button>
+</li>
             <li>
               <NavLink to="/events" onClick={() => setMenuOpen(false)}>
                 Events

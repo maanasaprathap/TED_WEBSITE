@@ -53,7 +53,7 @@ export const Innovate_22 = () => {
         <p className="text-lg font-bold text-red-500 text-center mt-6">INSPIRE. INNOVATE. INVENT.</p>
         
         <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
-          <Link to="/" className="text-red-500 hover:underline">← Back to Gallery</Link>
+          <Link to="/events" className="text-red-500 hover:underline">← Back to Gallery</Link>
         </motion.div>
       </motion.div>
     </div>

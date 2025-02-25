@@ -52,6 +52,9 @@ export const Innovate_18 = () => {
                     The event also included classical dance performances, a music show by Vibes (MIT’s official music band), an interactive quiz session by the Quiz Club of MIT, and fun events like Connexions, along with prize distributions for pre-events and on-day events.
                 </p>
                 <p className="text-lg font-bold text-red-500 text-center mt-6">INSPIRE. INNOVATE. INVENT.</p>
+                <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
+          <Link to="/events" className="text-red-500 hover:underline">← Back to Gallery</Link>
+        </motion.div>
             </motion.div>
         </div>
     );

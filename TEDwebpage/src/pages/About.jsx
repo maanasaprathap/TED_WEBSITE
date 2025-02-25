@@ -8,11 +8,11 @@ import { useState } from "react";
 import { FaBullseye } from "react-icons/fa";
 
 const teamImages = [
+   "/assets/group_images/team _2024.jpeg",
+   "/assets/group_images/team 2024.jpeg",
+   "/assets/group_images/innovate 23.JPG",
+   "/assets/group_images/innovate 22.JPG",
   "/assets/group_images/team 2019.jpg",
-  "/assets/group_images/innovate 22.JPG",
-  "/assets/group_images/innovate 23.JPG",
-  "/assets/group_images/team 2024.jpeg",
-  "/assets/group_images/team _2024.jpeg"
 ];
 
 // Flip card component for a team member
@@ -287,12 +287,8 @@ const About = () => {
     
   ];
 
-  return ( <div className="p-8 bg-black dark:bg-black ">
+  return ( <div className="p-16 bg-black dark:bg-black ">
     <motion.div
-      style={{
-        backgroundImage: "url('/assets/Team_Images/background_image.avif')",
-        fontFamily: "'Playfair Display', serif",
-      }}
       className="p-8 min-h-screen bg-cover bg-center text-white"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -398,7 +394,7 @@ invite potential speakers of various research fields and professions.
           transition={{ duration: 0.7 }}
           className="text-4xl font-bold text-red-600 text-center mb-6"
         >
-          Meet Our Previous Teams
+          Meet Our Teams
         </motion.h1>
         <Group_Images />
       </motion.div>
@@ -420,7 +416,7 @@ invite potential speakers of various research fields and professions.
     transition: { duration: 0.3 }
   }}
   transition={{ duration: 0.1 }}
-  className="text-4xl font-semibold text-red-400 transition-all hover:text-red-300 inline-flex items-center"
+  className="text-4xl font-semibold text-red-400 transition-all hover:text-red-600 inline-flex items-center"
 >
 <FaUsers size={32} className="mr-2" />
   <h1 className="text-3xl font-bold text-red-600">Our Team</h1>
@@ -433,7 +429,7 @@ invite potential speakers of various research fields and professions.
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.8 }}
-        className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6"
+        className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-2"
       >
         {teamMembers.map((member, index) => (
   <div key={index} className="h-70">

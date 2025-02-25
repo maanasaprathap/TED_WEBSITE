@@ -1,9 +1,9 @@
-/*************  ✨ Codeium Command 🌟  *************/
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import EventCard from "../components/EventCard";
 import { Link } from "react-router-dom";
 import About from "./About";
+import { div } from "framer-motion/client";
 
 const Home = () => {
   const calculateTimeLeft = () => {
@@ -33,8 +33,9 @@ const Home = () => {
 
   const [scrollY, setScrollY] = useState(0);
   return (
+    <div className="min-h-screen flex flex-col  items-center">
     <div
-      className="text-center p-8 min-h-screen flex flex-col justify-center items-center bg-cover bg-center"
+      className="text-center p-64 pb-8 min-h-screen flex flex-col justify-center items-center bg-cover bg-center"
       style={{
         backgroundImage: "url('assets/home_page/back_ted.jpg')",
         backgroundSize: "cover",
@@ -74,7 +75,8 @@ const Home = () => {
       <br />
 
       {/* Upcoming Events Section */}
-      <div className="flex flex-col md:flex-row justify-between w-full px-4 md:px-16 mt-[-20px] items-center">
+      <div className="flex flex-col md:flex-row justify-between w-full px-4 md:px-16 mt-[-20px] items-center gap-y-4 md:gap-x-8"
+>
         {/* Event Card */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -130,7 +132,7 @@ const Home = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="w-full md:w-1/2 flex flex-col items-center md:items-end mt-[-20px]"
+          className="w-full md:w-1/2 flex flex-col  md:items-end mt-[-20px] mt-8 md:mt-10 mr-[-10]" 
         >
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -150,10 +152,21 @@ const Home = () => {
           />
         </motion.div>
       </div>
+
+      
+    </div>
+    <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeInOut" }}
+  className="w-full"
+  id="about"
+>
+  <About />
+</motion.div>
     </div>
   );
 };
 
 export default Home; 
 
-/******  437ff387-5330-4114-a91a-e2d1ccd1fff5  *******/

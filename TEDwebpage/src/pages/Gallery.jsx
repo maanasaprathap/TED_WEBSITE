@@ -76,7 +76,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="p-8 bg-black min-h-screen flex flex-col overflow-hidden relative">
+    <div className="p-16 bg-black min-h-screen flex flex-col overflow-hidden relative">
       <motion.h1
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}

@@ -28,7 +28,7 @@ function App() {
       <Routes>
         {/* Main content inside Navbar */}
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/about" element={<About />} />
         <Route path="/events" element={<Events />} />
         <Route path="/speakers" element={<Speakers />} />
         <Route path="/gallery" element={<Gallery />} />
@@ -41,16 +41,15 @@ function App() {
         <Route path="/imposter-syndrome" element={<ImposterSyndromeArticle />} />
 
         {/* Event Articles */}
-        <Route path="/innovate-18" element={<Innovate_18 />} />
-        <Route path="/innovate-19" element={<Innovate_19 />} />
-        <Route path="/innovate-19-2" element={<Innovate_19_2 />} />
-        <Route path="/innovate-21" element={<Innovate_21 />} />
-        <Route path="/innovate-22" element={<Innovate_22 />} />
-        <Route path="/innovate-23" element={<Innovate_23 />} />
-        <Route path="/innovate-24" element={<Innovate_24 />} />
-        <Route path="/originate-24" element={<Originate_24 />} />
+        <Route path="/innovate'18" element={<Innovate_18 />} />
+        <Route path="/innovate'19" element={<Innovate_19 />} />
+        <Route path="/innovate'19.2.0" element={<Innovate_19_2 />} />
+        <Route path="/innovate'21" element={<Innovate_21 />} />
+        <Route path="/innovate'22" element={<Innovate_22 />} />
+        <Route path="/innovate'23" element={<Innovate_23 />} />
+        <Route path="/innovate'24" element={<Innovate_24 />} />
+        <Route path="/originate'24" element={<Originate_24 />} />
       </Routes>
-      <About />
 
       <Footer />
     </Router>
