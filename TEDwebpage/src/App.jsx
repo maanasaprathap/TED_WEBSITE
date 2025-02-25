@@ -21,14 +21,24 @@ import { Innovate_23 } from "./components/Events_Articles/innovate_23";
 import { Innovate_24 } from "./components/Events_Articles/innovate_24";
 import { Originate_24 } from "./components/Events_Articles/originate_24";
 
+function HomePage() {
+  return (
+    <>
+      <Home />
+      <About />  {/* 👈 About appears below Home */}
+    </>
+  );
+}
+
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        {/* Main content inside Navbar */}
-        <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        {/* Home and About in a single scrollable page */}
+        <Route path="/" element={<HomePage />} />
+
+        {/* Other Routes */}
         <Route path="/events" element={<Events />} />
         <Route path="/speakers" element={<Speakers />} />
         <Route path="/gallery" element={<Gallery />} />
@@ -50,8 +60,6 @@ function App() {
         <Route path="/innovate-24" element={<Innovate_24 />} />
         <Route path="/originate-24" element={<Originate_24 />} />
       </Routes>
-      <About />
-
       <Footer />
     </Router>
   );

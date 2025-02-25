@@ -182,7 +182,15 @@ const Speakers = () => {
       >
         PAST SPEAKER
       </motion.h1>
-      <p className="mb-6 text-center text-white">Check out our past speakers who increased value of our stage.</p>
+      <motion.h1
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="text-2xl font-bold text-red-600 text-center mb-8"
+        style={{ fontFamily: "'Cutive Mono', monospace" }}
+      >
+       TAKE A LOOK AT OUR PAST SPEAKERS WHO INCREASED THE VALUE OF OUR STAGE
+      </motion.h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">
         {speakers.map((speaker, index) => (
           <motion.div

@@ -401,9 +401,11 @@ invite potential speakers of various research fields and professions.
           Meet Our Previous Teams
         </motion.h1>
         <Group_Images />
-      </motion.div>
-    </div>
-
+     
+  
+<br></br>
+<br></br>
+<br></br>
       {/* Our Team Section */}
       <motion.div
   initial={{ opacity: 0, y: 10 }}
@@ -422,8 +424,9 @@ invite potential speakers of various research fields and professions.
   transition={{ duration: 0.1 }}
   className="text-4xl font-semibold text-red-400 transition-all hover:text-red-300 inline-flex items-center"
 >
+
 <FaUsers size={32} className="mr-2" />
-  <h1 className="text-3xl font-bold text-red-600">Our Team</h1>
+  <h1 className="text-3xl font-bold text-red-600">Our Current Team</h1>
 </motion.h2>
 
 </motion.div>
@@ -443,6 +446,8 @@ invite potential speakers of various research fields and professions.
 
       </motion.div>
     </motion.div> 
+    </div>
+    </motion.div>
     </div>
   );
 };

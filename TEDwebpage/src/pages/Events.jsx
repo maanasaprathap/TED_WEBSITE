@@ -108,8 +108,15 @@ const Events = ({ events = eventsData }) => {
         style={{ fontFamily: "'Cutive Mono', monospace" }}
       >
         PAST EVENTS
+      </motion.h1>  <motion.h1
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="text-2xl font-bold text-red-600 text-center mb-8"
+        style={{ fontFamily: "'Cutive Mono', monospace" }}
+      >
+        DISCOVER WHAT WE ARE UP TO !
       </motion.h1>
-      <p className="mb-6 text-center text-white">Explore our past events and activities.</p>
 
       <div className="relative w-full flex items-center">
         <button
