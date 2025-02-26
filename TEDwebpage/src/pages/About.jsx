@@ -8,11 +8,12 @@ import { useState } from "react";
 import { FaBullseye } from "react-icons/fa";
 
 const teamImages = [
+   "/assets/group_images/team 2024.jpeg",
+  "/assets/group_images/team _2024.jpeg",
+   "/assets/group_images/innovate 23.JPG",
+    "/assets/group_images/innovate 22.JPG",
   "/assets/group_images/team 2019.jpg",
-  "/assets/group_images/innovate 22.JPG",
-  "/assets/group_images/innovate 23.JPG",
-  "/assets/group_images/team 2024.jpeg",
-  "/assets/group_images/team _2024.jpeg"
+
 ];
 
 // Flip card component for a team member
@@ -398,7 +399,7 @@ invite potential speakers of various research fields and professions.
           transition={{ duration: 0.7 }}
           className="text-4xl font-bold text-red-600 text-center mb-6"
         >
-          Meet Our Previous Teams
+          Meet Our Journey Makers
         </motion.h1>
         <Group_Images />
      
@@ -426,7 +427,7 @@ invite potential speakers of various research fields and professions.
 >
 
 <FaUsers size={32} className="mr-2" />
-  <h1 className="text-3xl font-bold text-red-600">Our Current Team</h1>
+  <h1 className="text-3xl font-bold text-red-600">Meet Our Leading Crew</h1>
 </motion.h2>
 
 </motion.div>
