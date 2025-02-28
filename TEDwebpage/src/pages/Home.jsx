@@ -46,7 +46,7 @@ const Home = () => {
   initial={{ opacity: 0, scale: 0.9 }}
   animate={{ opacity: 1, scale: 1 }}
   transition={{ duration: 0.7 }}
-  className="font-bold text-white text-3xl sm:text-4xl md:text-6xl drop-shadow-lg text-center"
+  className="font-bold text-white text-3xl sm:text-4xl md:text-6xl drop-shadow-lg text-center mt-[-20px]"
   style={{
     fontFamily: "'Cutive Mono', monospace",
     textShadow: "4px 4px 12px rgba(255, 0, 0, 0.9), 2px 2px 8px rgba(0, 0, 0, 1)",

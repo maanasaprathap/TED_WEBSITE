@@ -78,91 +78,79 @@ const Group_Images = () => {
 
 
 const TeamCard = ({ member }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
   return (
-    <div className="w-full h-full" style={{ perspective: "1000px" }}>
+    <div
+      className="w-full h-full"
+      style={{ perspective: "1000px" }}
+      onClick={() => setIsFlipped(!isFlipped)} // Toggle flip on click (for mobile)
+    >
       <motion.div
         className="relative w-full h-full"
-        whileHover={{
-          rotateY: 180,
-          scale: 1.05,
-          boxShadow: "0 0 15px rgba(239,68,68,0.8)"
-        }}
+        animate={{ rotateY: isFlipped ? 180 : 0 }} // Flip on click
+        whileHover={{ rotateY: 180, scale: 1.05, boxShadow: "0 0 15px rgba(239,68,68,0.8)" }} // Desktop hover effect
         transition={{ duration: 0.5 }}
-        style={{
-          transformStyle: "preserve-3d",
-          boxShadow: "0 0 8px rgba(239,68,68,0.4)"
-        }}
+        style={{ transformStyle: "preserve-3d", boxShadow: "0 0 8px rgba(239,68,68,0.4)" }}
       >
         {/* Front Side */}
-        
+        <div className="absolute w-full h-full bg-white rounded-xl shadow-lg flex flex-col items-center justify-center overflow-hidden">
+  {member.img && (
+    <img
+      src={member.img}
+      alt={member.name}
+      className="w-full max-h-[250px] sm:max-h-full aspect-[4/3] object-cover object-center"
+      style={{ objectPosition: getObjectPosition(member.name) }}
+    />
+  )}
+  <p className="text-lg font-bold mt-2">{member.name}</p>
+  <p className="text-sm text-gray-500">{member.position}</p>
+</div>
 
-          <div className="h-4/4">
-            {member.img ? (
-              <img
-                src={member.img}
-                alt={member.name}
-                className="w-full h-[250px] sm:h-full object-cover object-center"
-                style={{ objectPosition: getObjectPosition(member.name) }}
-              />
-            ) : null}
-            {member.name} <span>
-              
-            </span><span></span>-
-            {member.position}
-          </div>
-          
-        
+
         {/* Back Side */}
         <div
-          className="absolute inset-0 flex flex-col items-center justify-center bg-red-200 rounded-xl shadow-md p-4"
-          style={{
-            backfaceVisibility: "hidden",
-            transform: "rotateY(180deg)"
-          }}
-        >
-          <p
-            className="text-gray-800 text-3xl font-bold"
-            style={{ fontFamily: "'Caviar Dreams', sans-serif" }}
-          >
-            {member.name}
-          </p>
-          <p
-            className="text-gray-800 text-2xl mt-2"
-            style={{ fontFamily: "'Cutive Mono', monospace" }}
-          >
-            {member.position}
-          </p>
-          <div className="flex space-x-4 mt-4">
-            <a
-              href={member.git}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-500"
-            >
-              <FaGithub size={24} />
-            </a>
-            <a
-              href={member.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-500"
-            >
-              <FaLinkedin size={24} />
-            </a>
-            <a
-              href={member.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-500"
-            >
-              <FaInstagram size={24} />
-            </a>
-          </div>
-        </div>
+  className="absolute inset-0 flex flex-col items-center justify-center bg-red-200 rounded-xl shadow-md p-4"
+  style={{
+    backfaceVisibility: "hidden",
+    transform: "rotateY(180deg)",
+  }}
+>
+  {/* Name */}
+  <p
+    className="text-gray-800 text-xl sm:text-2xl md:text-3xl font-bold text-center"
+    style={{ fontFamily: "'Caviar Dreams', sans-serif" }}
+  >
+    {member.name}
+  </p>
+
+  {/* Position */}
+  <p
+    className="text-gray-800 text-sm sm:text-lg md:text-xl mt-2 text-center"
+    style={{ fontFamily: "'Cutive Mono', monospace" }}
+  >
+    {member.position}
+  </p>
+
+  {/* Social Links */}
+  <div className="flex space-x-4 mt-4">
+    {/* <a href={member.git} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">
+      <FaGithub size={20} className="sm:size-16" />
+    </a> */}
+    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">
+      <FaLinkedin size={20} className="sm:size-16" />
+    </a>
+    <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">
+      <FaInstagram size={20} className="sm:size-16" />
+    </a>
+  </div>
+</div>
+
       </motion.div>
     </div>
   );
 };
+
 
 
 const About = () => {
@@ -173,8 +161,8 @@ const About = () => {
       position: "President",
       img: "/src/TedcMit/assets/Team_Images/Prakash_sir.jpeg",
       git: "../alice",
-      linkedin: "..alice",
-      instagram: "..alice",
+      linkedin: "https://www.linkedin.com/in/prakash-p-0a2ba2302/",
+      instagram: "https://www.instagram.com/prakz_79",
     },
     {
       name: "Selvalingam B",
@@ -182,7 +170,7 @@ const About = () => {
        img: "/src/TedcMit/assets/Team_Images/Selvalingam B.jpg",
       git: "../alice",
       linkedin: "..alice",
-      instagram: "..alice",
+      instagram: "https://www.instagram.com/__selva_lingam__?utm_source=qr",
     },
     {
       name: "Shanthosh S",
@@ -190,7 +178,7 @@ const About = () => {
       img: "/src/TedcMit/assets/Team_Images/Shanthosh S.jpg",
       git: "../bob",
       linkedin: "..bob",
-      instagram: "..bob",
+      instagram: "https://www.instagram.com/shanthosh.s_322",
     },
     {
       name: "Shalini M",
@@ -198,7 +186,7 @@ const About = () => {
       img: "/src/TedcMit/assets/Team_Images/Shalini M.jpg",
       git: "../charlie",
       linkedin: "..charlie",
-      instagram: "..charlie",
+      instagram: "https://www.instagram.com/sha_lini5890",
     },
     {
       name: "Thennarasu V",
@@ -206,7 +194,7 @@ const About = () => {
       img: "/src/TedcMit/assets/Team_Images/Thennarasu V.jpg",
       git: "../david",
       linkedin: "..david",
-      instagram: "..david",
+      instagram: "https://www.instagram.com/_thenn._.arasu30_",
     },
     {
       name: "Anish H",
@@ -214,7 +202,7 @@ const About = () => {
       img: "/src/TedcMit/assets/Team_Images/Anish H.jpg",
       git: "../eve",
       linkedin: "..eve",
-      instagram: "..eve",
+      instagram: "https://www.instagram.com/__anish.__.01",
     },
     {
       name: "Thulasidharan C A",
@@ -222,7 +210,7 @@ const About = () => {
       img: "/src/TedcMit/assets/Team_Images/Thulasidharan C A.jpg",
       git: "../frank",
       linkedin: "..frank",
-      instagram: "..frank",
+      instagram: "https://www.instagram.com/im_td.06",
     },
     {
       name: "Dhinesh K",
@@ -230,7 +218,7 @@ const About = () => {
       img: "/src/TedcMit/assets/Team_Images/Dhinesh K.jpg",
       git: "../grace",
       linkedin: "..grace",
-      instagram: "..grace",
+      instagram: "https://www.instagram.com/dhineshkarthik30",
     },
     {
       name: "Dinesh P",
@@ -238,7 +226,7 @@ const About = () => {
       img: "/src/TedcMit/assets/Team_Images/Dinesh P.jpg",
       git: "../heidi",
       linkedin: "..heidi",
-      instagram: "..heidi",
+      instagram: "https://www.instagram.com/dinesh14_._",
     },
     {
       name: "Sriram K",
@@ -246,7 +234,7 @@ const About = () => {
       img: "/src/TedcMit/assets/Team_Images/Sriram K.JPG",
       git: "../ivan",
       linkedin: "..ivan",
-      instagram: "..ivan",
+      instagram: "https://www.instagram.com/__k_sriram__",
     },
     {
       name: "Dhanush M",
@@ -254,7 +242,7 @@ const About = () => {
       img: "/src/TedcMit/assets/Team_Images/Dhanush M.jpg",
       git: "../judy",
       linkedin: "..judy",
-      instagram: "..judy",
+      instagram: "https://www.instagram.com/____dhanu__sh/",
     },
     {
       name: "Sripushkalai S",
@@ -262,7 +250,7 @@ const About = () => {
       img: "/src/TedcMit/assets/Team_Images/Sripushkalai S.jpg",
       git: "../kevin",
       linkedin: "..kevin",
-      instagram: "..kevin",
+      instagram: "https://www.instagram.com/_.pushey",
     },
     {
       name: "Aishwarya I",
@@ -270,7 +258,7 @@ const About = () => {
       img: "/src/TedcMit/assets/Team_Images/Aishwarya I.jpg",
       git: "../laura",
       linkedin: "..laura",
-      instagram: "../laura",
+      instagram: "https://www.instagram.com/princessfuzzie._0",
     },
     {
       name: "Manivasagam G",
@@ -278,7 +266,7 @@ const About = () => {
       img: "/src/TedcMit/assets/Team_Images/Manivasagam G.jpg",
       git: "../mallory",
       linkedin: "..mallory",
-      instagram: "..mallory",
+      instagram: "https://www.instagram.com/manivasagan._._",
     },
     {
       name: "Mukesh L",
@@ -286,7 +274,7 @@ const About = () => {
       img: "/src/TedcMit/assets/Team_Images/Mukesh L.jpg",
       git: "../niaj",
       linkedin: "..niaj",
-      instagram: "..niaj",
+      instagram: "https://www.instagram.com/m_u_k_e_s_h_k_u_t_t_y",
     },
    
     
