@@ -14,7 +14,7 @@ const Navbar = () => {
     <div>
       <nav className="bg-black p-4 text-white w-full top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
-          <Link to="/" onClick={() => setMenuOpen(false)}>
+          <Link to="/src/TedcMit/" onClick={() => setMenuOpen(false)}>
             <h1 className={`text-xl font-bold ${menuOpen ? "hidden" : ""}`}>
               <span className="text-red-600">TEDc </span>
               <span className="text-white">MIT</span>
@@ -33,11 +33,11 @@ const Navbar = () => {
           <ul
             className={`nav-links ${
               menuOpen ? "open" : "hidden"
-            } md:flex md:static md:bg-transparent`}
+            } md:flex md:static md:bg-black`}
           >
             <li>
   <NavLink
-    to="/"
+    to="/src/TedcMit/"
     onClick={() => {
       setMenuOpen(false);
       window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top
@@ -52,22 +52,22 @@ const Navbar = () => {
   </button>
 </li>
             <li>
-              <NavLink to="/events" onClick={() => setMenuOpen(false)}>
+              <NavLink to="/src/TedcMit/events" onClick={() => setMenuOpen(false)}>
                 Events
               </NavLink>
             </li>
             <li>
-              <NavLink to="/speakers" onClick={() => setMenuOpen(false)}>
+              <NavLink to="/src/TedcMit/speakers" onClick={() => setMenuOpen(false)}>
                 Speakers
               </NavLink>
             </li>
             <li>
-              <NavLink to="/gallery" onClick={() => setMenuOpen(false)}>
+              <NavLink to="/src/TedcMit/gallery" onClick={() => setMenuOpen(false)}>
                 Blogs
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
+              <NavLink to="/src/TedcMit/contact" onClick={() => setMenuOpen(false)}>
                 Contact
               </NavLink>
             </li>

@@ -22,7 +22,7 @@ const ImposterSyndromeArticle = () => {
       <p className="text-sm text-gray-500 text-center">By SABHARNA SHANJITHA M - September 18, 2021</p>
 
       <motion.img
-        src="/assets/Articles/cf1.jpg"
+        src="/src/TedcMit/assets/Articles/cf1.jpg"
         alt="Imposter Syndrome"
         className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -53,7 +53,7 @@ As “what you’re good at” and “what you happy” are entirely different t
       </motion.p>
 
       <motion.img
-        src="/assets/Articles/ cf2.jpg"
+        src="/src/TedcMit/assets/Articles/ cf2.jpg"
         alt="Feeling of inadequacy"
         className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -75,7 +75,7 @@ Picture yourself being born in Iran and think how different things would’ve be
       </motion.p>
 
       <motion.img
-        src="/assets/Articles/cf2.jpg"
+        src="/src/TedcMit/assets/Articles/cf2.jpg"
         alt="Ways to overcome imposter syndrome"
         className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -111,7 +111,7 @@ Picture yourself being born in Iran and think how different things would’ve be
       </motion.p>
      
       <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
-        <Link to="/" className="text-red-500 hover:underline">← Back to Gallery</Link>
+        <Link to="/src/TedcMit/gallery" className="text-red-500 hover:underline">← Back to Gallery</Link>
       </motion.div>
     </motion.div>
     </div>

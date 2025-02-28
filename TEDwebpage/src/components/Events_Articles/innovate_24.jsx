@@ -20,7 +20,7 @@ export const Innovate_24 = () => {
           
         </motion.h1>
         <motion.img
-          src="/assets/Events/2024/Innovate-24.jpeg"
+          src="/src/TedcMit/assets/Events/2024/Innovate-24.jpeg"
           alt="Innovate 24"
           className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -48,7 +48,7 @@ export const Innovate_24 = () => {
         </p>
         <p className="text-lg font-bold text-red-500 text-center mt-6">INSPIRE. INNOVATE. INVENT.</p>
         <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
-          <Link to="/" className="text-red-500 hover:underline">← Back to Gallery</Link>
+          <Link to="/src/TedcMit/events" className="text-red-500 hover:underline">← Back to Gallery</Link>
         </motion.div>
       </motion.div>
     </div>

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 export const Innovate_19_2 = () => {
     return (
         <div className="p-8 bg-black min-h-screen flex flex-col overflow-hidden relative pb-24">
@@ -22,7 +22,7 @@ export const Innovate_19_2 = () => {
                     “Ever tried. Ever failed. No matter. Try again. Fail again. Fail better.”
                 </p>
                 <motion.img
-                    src="/assets/Events/2019/innovate-name.jpg"
+                    src="/src/TedcMit/assets/Events/2019/innovate-name.jpg"
                     alt="Innovate 19 2.0"
                     className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
                     initial={{ opacity: 0, scale: 0.9 }}
@@ -36,19 +36,19 @@ export const Innovate_19_2 = () => {
                 <motion.div className="space-y-4">
                     {[{
                         name: "Mr. Murali Vijayakumar (Biglee)",
-                        image: "/assets/Events/2019/guest-2.jpg",
+                        image: "/src/TedcMit/assets/Events/2019/guest-2.jpg",
                         description: "Coach Murali Vijayakumar, widely known as BigLee, delivered an electrifying talk on 'The Art of Falling'. He emphasized that setbacks in life build resilience and that failure is a stepping stone to growth."
                     }, {
                         name: "Mr. Sriram | Founder and CTO - Primefort",
-                        image: "/assets/Events/2019/guest-3.jpg",
+                        image: "/src/TedcMit/assets/Events/2019/guest-3.jpg",
                         description: "Mr. Sriram shared insights on cybersecurity and the entrepreneurial journey of Primefort, inspiring young minds to embrace failure as a learning process."
                     }, {
                         name: "Mr. Prashanth R | Tamil Cinema Reviewer",
-                        image: "/assets/Events/2019/guest-5.jpg",
+                        image: "/src/TedcMit/assets/Events/2019/guest-5.jpg",
                         description: "Mr. Prashanth discussed the impact of constructive criticism and how learning from setbacks can shape success in the media industry."
                     }, {
                         name: "Mrs. K. Suriya Prabha | Founder and CEO - Youcode Intelligence Solutions",
-                        image: "/assets/Events/2019/guest-4.jpg",
+                        image: "/src/TedcMit/assets/Events/2019/guest-4.jpg",
                         description: "Mrs. Suriya Prabha enlightened the audience on innovation in AI and how failures in research pave the way for groundbreaking discoveries."
                     }].map((speaker, index) => (
                         <motion.div
@@ -79,6 +79,9 @@ export const Innovate_19_2 = () => {
                 </p>
                 <p className="text-lg font-bold text-red-500 text-center mt-6">INSPIRE. INNOVATE. INVENT.</p>
             </motion.div>
+            <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
+          <Link to="/src/TedcMit/events" className="text-red-500 hover:underline">← Back to Gallery</Link>
+        </motion.div>
         </div>
     );
 };

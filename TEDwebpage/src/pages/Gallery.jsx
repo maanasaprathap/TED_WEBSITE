@@ -10,8 +10,8 @@ const Gallery = () => {
       title: "Are Feminist movements going too far?",
       description:
         "To all the young girls out there (sorry boys) Looking for ways to empower yourself? Has all the feminist talks left you with goosebumps and the urge...",
-      image: "/assets/Articles/Feminism/Feminism_1.png",
-      link: "/feminism",
+      image: "/src/TedcMit/assets/Articles/Feminism/Feminism_1.png",
+      link: "/src/TedcMit/feminism",
       date: "January 8, 2022",
     },
     {
@@ -19,8 +19,8 @@ const Gallery = () => {
       title: "ARE YOU LOST IN THE GRAVEYARD OF DREAMS?",
       description:
         "Think back to the moment when you’ve had too many anxious thoughts about life. When was the last time you did something for the first time?",
-      image: "/assets/Articles/ComfortZone_2.jpg",
-      link: "/comfort-zone",
+      image: "/src/TedcMit/assets/Articles/ComfortZone_2.jpg",
+      link: "/src/TedcMit/comfort-zone",
       date: "July 31, 2021",
     },
     {
@@ -28,8 +28,8 @@ const Gallery = () => {
       title: "DIGITAL DNA STORAGE IS CLOSER THAN YOU THINK!",
       description:
         "Still caught up deciding between a 32GB or a 64GB pendrive? Annoyed by the frequent 'not enough space' and 'running out of storage' notifications? Not anymore!",
-      image: "/assets/Articles/DNA_2.png",
-      link: "/dna-storage",
+      image: "/src/TedcMit/assets/Articles/DNA_2.png",
+      link: "/src/TedcMit/dna-storage",
       date: "June 26, 2021",
     },
     {
@@ -37,8 +37,8 @@ const Gallery = () => {
       title: "IMPOSTER SYNDROME: TAKING IMPOSTERS BEYOND AMONG US",
       description:
         "Imposters have infiltrated and now they’re among us. A prestigious conference with renowned tycoons and artists...",
-      image: "/assets/Articles/ImpoSyn_1.jpg",
-      link: "/imposter-syndrome",
+      image: "/src/TedcMit/assets/Articles/ImpoSyn_1.jpg",
+      link: "/src/TedcMit/imposter-syndrome",
       date: "September 18, 2021",
     },
   ];

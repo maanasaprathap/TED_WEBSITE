@@ -37,38 +37,37 @@ const Home = () => {
     <div
       className="text-center p-64 pb-8 min-h-screen flex flex-col justify-center items-center bg-cover bg-center"
       style={{
-        backgroundImage: "url('assets/home_page/back_ted.jpg')",
+        backgroundImage: "url('/src/TedcMit/assets/home_page/back_ted.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
       <motion.h1
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.7 }}
-        className=" font-bold text-white text-4xl md:text-6xl drop-shadow-lg text-center mt-[-120px]"
-        style={{
-          fontFamily: "'Cutive Mono', monospace",
-          textShadow:
-            "4px 4px 12px rgba(255, 0, 0, 0.9), 2px 2px 8px rgba(0, 0, 0, 1)",
-        }}
-      >
-        INSPIRE. INNOVATE. INVENT.
-      </motion.h1>
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.7 }}
+  className="font-bold text-white text-3xl sm:text-4xl md:text-6xl drop-shadow-lg text-center"
+  style={{
+    fontFamily: "'Cutive Mono', monospace",
+    textShadow: "4px 4px 12px rgba(255, 0, 0, 0.9), 2px 2px 8px rgba(0, 0, 0, 1)",
+  }}
+>
+  INSPIRE. INNOVATE. INVENT.
+</motion.h1>
 
-      <motion.h1
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.7 }}
-        className=" font-bold text-white text-4xl md:text-6xl drop-shadow-lg text-center mt-[-120px]"
-        style={{
-          fontFamily: "'Cutive Mono', monospace",
-          textShadow:
-            "4px 4px 12px rgba(255, 0, 0, 0.9), 2px 2px 8px rgba(0, 0, 0, 1)",
-        }}
-      >
-        Welcome to TEDcMIT
-      </motion.h1>
+<motion.h1
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.7 }}
+  className="font-bold text-white text-3xl sm:text-4xl md:text-6xl drop-shadow-lg text-center mt-4"
+  style={{
+    fontFamily: "'Cutive Mono', monospace",
+    textShadow: "4px 4px 12px rgba(255, 0, 0, 0.9), 2px 2px 8px rgba(0, 0, 0, 1)",
+  }}
+>
+  Welcome to TEDcMIT
+</motion.h1>
+
 
       <br />
       <br />
@@ -144,7 +143,7 @@ const Home = () => {
           </motion.h2>
           <br />
           <img
-            src="assets/home_page/qr-code.jpg"
+            src="/src/TedcMit/assets/home_page/qr-code.jpg"
             alt="Scan QR Code"
             className="w-70 h-70 border border-white p-2 rounded-lg shadow-lg transition-all duration-300 ease-in-out 
                       hover:shadow-red-500 hover:scale-105 hover:bg-opacity-80 
@@ -155,15 +154,16 @@ const Home = () => {
 
       
     </div>
-    <motion.div
+   <motion.div
   initial={{ opacity: 0, y: 50 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8, ease: "easeInOut" }}
-  className="w-full"
+  className="w-full max-w-full overflow-x-hidden min-h-screen flex flex-col justify-center items-center" // Ensures it fills the screen
   id="about"
 >
   <About />
 </motion.div>
+
     </div>
   );
 };

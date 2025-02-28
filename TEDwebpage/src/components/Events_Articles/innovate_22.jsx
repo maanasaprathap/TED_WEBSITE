@@ -20,7 +20,7 @@ export const Innovate_22 = () => {
         </motion.h1>
         <p className="text-sm text-gray-500 text-center">TEDcMIT - Innovate 22, March 19, 2022</p>
         <motion.img
-          src="/assets/Events/2022/INNOVATE'22_Poster.jpg"
+          src="/src/TedcMit/assets/Events/2022/INNOVATE'22_Poster.jpg"
           alt="Innovate 22"
           className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -53,7 +53,7 @@ export const Innovate_22 = () => {
         <p className="text-lg font-bold text-red-500 text-center mt-6">INSPIRE. INNOVATE. INVENT.</p>
         
         <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
-          <Link to="/" className="text-red-500 hover:underline">← Back to Gallery</Link>
+          <Link to="/src/TedcMit/events" className="text-red-500 hover:underline">← Back to Gallery</Link>
         </motion.div>
       </motion.div>
     </div>

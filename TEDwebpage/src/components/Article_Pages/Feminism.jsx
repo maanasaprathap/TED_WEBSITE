@@ -27,7 +27,7 @@ const Feminism = () => {
       <p className="text-sm text-gray-500 text-center">-By SABHARNA SHANJITHA M</p>
 
       <motion.img
-        src="/assets/Articles/Feminism/Feminism_1.png"
+        src="/src/TedcMit/assets/Articles/Feminism/Feminism_1.png"
         alt="Feninism"
         className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -57,7 +57,7 @@ const Feminism = () => {
       </motion.p>
 
       <motion.img
-        src="/assets/Articles/Feminism/Feminism_2.png"
+        src="/src/TedcMit/assets/Articles/Feminism/Feminism_2.png"
         alt="feminist"
         className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -84,7 +84,7 @@ const Feminism = () => {
       </motion.p>
 
       <motion.img
-        src="/assets/Articles/Feminism/Feminism_3.png"
+        src="/src/TedcMit/assets/Articles/Feminism/Feminism_3.png"
         alt="equality and freedom"
         className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -120,7 +120,7 @@ const Feminism = () => {
       </motion.p>
 
       <motion.img
-        src="/assets/Articles/Feminism/Feminism_4.png"
+        src="/src/TedcMit/assets/Articles/Feminism/Feminism_4.png"
         alt="equality and freedom"
         className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -150,7 +150,7 @@ const Feminism = () => {
 
 
       <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
-        <Link to="/" className="text-red-500 hover:underline">← Back to Gallery</Link>
+        <Link to="/src/TedcMit/gallery" className="text-red-500 hover:underline">← Back to Gallery</Link>
       </motion.div>
     </motion.div>
   </div>

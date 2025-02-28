@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 export const Innovate_19 = () => {
   return (
     <div className="p-8 bg-black min-h-screen flex flex-col overflow-hidden relative pb-24">
@@ -19,7 +19,7 @@ export const Innovate_19 = () => {
         </motion.h1>
         <p className="text-sm text-gray-500 text-center">TEDcMIT - Innovate 19, February 6, 2019</p>
         <motion.img
-          src="/assets/Events/2019/innovate-19-1.0.jpg"
+          src="/src/TedcMit/assets/Events/2019/innovate-19-1.0.jpg"
           alt="Innovate 19 1.0"
           className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
           initial={{ opacity: 0, scale: 0.9 }}
@@ -39,19 +39,19 @@ export const Innovate_19 = () => {
         <motion.div className="space-y-4">
           {[{
             name: "Ms. Vanathi Balasubramaniyam | Founder, NGO - 'ThatsMyChild'",
-            image: "/assets/Events/2019/guest-1.jpg",
+            image: "/src/TedcMit/assets/Events/2019/guest-1.jpg",
             description: "Ms. Vanathi inspired the audience with her journey in social entrepreneurship, emphasizing the power of grassroots activism."
           }, {
             name: "Soundarya Lakshmi Narayanan | Student-Entrepreneur, CEO of 'NxtStep Robotics'",
-            image: "/assets/Events/2019/guest-2.jpg",
+            image: "/src/TedcMit/assets/Events/2019/guest-2.jpg",
             description: "Soundarya shared insights into the startup ecosystem and the role of innovation in shaping the future."
           }, {
             name: "Mr. Jagan | Stand-up Comedian",
-            image: "/assets/Events/2019/guest-3.jpg",
+            image: "/src/TedcMit/assets/Events/2019/guest-3.jpg",
             description: "Mr. Jagan brought humor and wisdom, discussing the importance of laughter in overcoming challenges."
           }, {
             name: "Ms. Malini Jeevarathnam | Filmmaker and Social Activist",
-            image: "/assets/Events/2019/guest-4.jpg",
+            image: "/src/TedcMit/assets/Events/2019/guest-4.jpg",
             description: "Ms. Malini delved into the role of media in driving social change and breaking stereotypes."
           }].map((speaker, index) => (
             <motion.div
@@ -82,6 +82,9 @@ export const Innovate_19 = () => {
         </p>
         <p className="text-lg font-bold text-red-500 text-center mt-6">INSPIRE. INNOVATE. INVENT.</p>
       </motion.div>
+      <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
+          <Link to="/src/TedcMit/events" className="text-red-500 hover:underline">← Back to Gallery</Link>
+        </motion.div>
     </div>
   );
 };

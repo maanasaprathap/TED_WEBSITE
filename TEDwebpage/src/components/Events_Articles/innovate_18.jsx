@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 export const Innovate_18 = () => {
     return (
         <div className="p-8 bg-black min-h-screen flex flex-col overflow-hidden relative pb-24">
@@ -22,7 +22,7 @@ export const Innovate_18 = () => {
                     Ever wanna time travel? Designed your own world you dreamt of one day? Wondered about the problems arising every day in spite of growth economically and socially? Had a debate on Marvel or DC? All that present today were only imaginations and ideas of people like you and me. Be it a black hole theory or a black coffee recipe, it's all about ideas and those who dared to give them life.
                 </p>
                 <motion.img
-                    src="/assets/Events/2018/innovate-2k18.png"
+                    src="/src/TedcMit/assets/Events/2018/innovate-2k18.png"
                     alt="Innovate 18"
                     className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
                     initial={{ opacity: 0, scale: 0.9 }}
@@ -53,6 +53,9 @@ export const Innovate_18 = () => {
                 </p>
                 <p className="text-lg font-bold text-red-500 text-center mt-6">INSPIRE. INNOVATE. INVENT.</p>
             </motion.div>
+            <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
+          <Link to="/events" className="text-red-500 hover:underline">← Back to Gallery</Link>
+        </motion.div>
         </div>
     );
 };

@@ -22,7 +22,7 @@ const ImposterSyndromeArticle = () => {
       <p className="text-sm text-gray-500 text-center">By SABHARNA SHANJITHA M - September 18, 2021</p>
 
       <motion.img
-        src="/assets/Articles/ImpoSyn_1.jpg"
+        src="/src/TedcMit/assets/Articles/ImpoSyn_1.jpg"
         alt="Imposter Syndrome"
         className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -52,7 +52,7 @@ const ImposterSyndromeArticle = () => {
       </motion.p>
 
       <motion.img
-        src="/assets/Articles/Feeling_inad.jpg"
+        src="/src/TedcMit/assets/Articles/Feeling_inad.jpg"
         alt="Feeling of inadequacy"
         className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -81,7 +81,7 @@ const ImposterSyndromeArticle = () => {
       </motion.p>
 
       <motion.img
-        src="/assets/Articles/feeling3.jpg"
+        src="/src/TedcMit/assets/Articles/feeling3.jpg"
         alt="Ways to overcome imposter syndrome"
         className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -118,7 +118,7 @@ const ImposterSyndromeArticle = () => {
       </motion.p>
 
       <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
-        <Link to="/" className="text-red-500 hover:underline">← Back to Gallery</Link>
+        <Link to="/src/TedcMit/gallery" className="text-red-500 hover:underline">← Back to Gallery</Link>
       </motion.div>
     </motion.div>
   </div>

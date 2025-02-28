@@ -27,28 +27,28 @@ function App() {
       <Navbar />
       <Routes>
         {/* Main content inside Navbar */}
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/speakers" element={<Speakers />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/src/TedcMit" element={<Home />} />
+        <Route path="/src/TedcMit/about" element={<About />} />
+        <Route path="/src/TedcMit/events" element={<Events />} />
+        <Route path="/src/TedcMit/speakers" element={<Speakers />} />
+        <Route path="/src/TedcMit/gallery" element={<Gallery />} />
+        <Route path="/src/TedcMit/contact" element={<Contact />} />
 
         {/* Articles */}
-        <Route path="/feminism" element={<Feminism />} />
-        <Route path="/comfort-zone" element={<ComfortZoneArticle />} />
-        <Route path="/dna-storage" element={<DNA_Article />} />
-        <Route path="/imposter-syndrome" element={<ImposterSyndromeArticle />} />
+        <Route path="/src/TedcMit/feminism" element={<Feminism />} />
+        <Route path="/src/TedcMit/comfort-zone" element={<ComfortZoneArticle />} />
+        <Route path="/src/TedcMit/dna-storage" element={<DNA_Article />} />
+        <Route path="/src/TedcMit/imposter-syndrome" element={<ImposterSyndromeArticle />} />
 
         {/* Event Articles */}
-        <Route path="/innovate'18" element={<Innovate_18 />} />
-        <Route path="/innovate'19" element={<Innovate_19 />} />
-        <Route path="/innovate'19.2.0" element={<Innovate_19_2 />} />
-        <Route path="/innovate'21" element={<Innovate_21 />} />
-        <Route path="/innovate'22" element={<Innovate_22 />} />
-        <Route path="/innovate'23" element={<Innovate_23 />} />
-        <Route path="/innovate'24" element={<Innovate_24 />} />
-        <Route path="/originate'24" element={<Originate_24 />} />
+        <Route path="/src/TedcMit/innovate'18" element={<Innovate_18 />} />
+        <Route path="/src/TedcMit/innovate'19" element={<Innovate_19 />} />
+        <Route path="/src/TedcMit/innovate'19.2.0" element={<Innovate_19_2 />} />
+        <Route path="/src/TedcMit/innovate'21" element={<Innovate_21 />} />
+        <Route path="/src/TedcMit/innovate'22" element={<Innovate_22 />} />
+        <Route path="/src/TedcMit/innovate'23" element={<Innovate_23 />} />
+        <Route path="/src/TedcMit/innovate'24" element={<Innovate_24 />} />
+        <Route path="/src/TedcMit/originate'24" element={<Originate_24 />} />
       </Routes>
 
       <Footer />

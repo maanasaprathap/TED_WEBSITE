@@ -4,174 +4,175 @@ const Speakers = () => {
  const speakers = [
     {
        name: " Mr. Ubagarampillai Sahayam | Former IAS officer",
-            image: "/assets/Events/2021/sagayam_ias.jpeg",
+            image: "/src/TedcMit/assets/Events/2021/sagayam_ias.jpeg",
             description: ""
     },
           {
             name: "Dr. Jangid IPS",
-            image: "/assets/Events/2022/Jangid IPS.jpeg",
+            image: "/src/TedcMit/assets/Events/2022/Jangid IPS.jpeg",
             description: ""
           },
           {
             name: "Raj Mohan | Director",
-            image: "/assets/Events/2022/Rajmohan.jpeg",
+            image: "/src/TedcMit/assets/Events/2022/Rajmohan.jpeg",
             description: ""
           },
           {
             name: "Mrs Bharathi Baskar | Tamil Orator",
-            image: "/assets/Events/2021/bharathi baskar.jpeg",
+            image: "/src/TedcMit/assets/Events/2021/bharathi baskar.jpeg",
             description: ""
           },
            {
             name: "Dr. Sivaraman",
-            image: "/assets/Events/2022/Dr.Sivaraman.jpeg",
+            image: "/src/TedcMit/assets/Events/2022/Dr.Sivaraman.jpeg",
             description: ""
           },
           {
             name: "RJ Vignesh - BlackSheep Entertainment",
-            image: "/assets/Events/2024/rj vignesh.JPG",
+            image: "/src/TedcMit/assets/Events/2024/rj vignesh.JPG",
+            description: ""
+          },
+           {
+            name: "Mr. Arivarasu Kalainesan | Rapper and lyricist",
+            image: "/src/TedcMit/assets/Events/2023/guest-6.jpg",
             description: ""
           },
            {
             name: "Mr TamilSelvan |  Founder of TamilTech",
-            image: "/assets/Events/2024/tamilselvan.JPG",
+            image: "/src/TedcMit/assets/Events/2024/tamilselvan.JPG",
             description: ""
           },
           {
             name: "Mr. Anbuthasan | Actor",
-            image: "/assets/Events/2024/Anbuthasan.JPG",
+            image: "/src/TedcMit/assets/Events/2024/Anbuthasan.JPG",
             description: ""
           },
           {
             name: "Mr. Suresh Kumar | Founder of Pepul",
-            image: "/assets/Events/2022/guest-1.jpg",
+            image: "/src/TedcMit/assets/Events/2022/guest-1.jpg",
             description: ""
           }, {
             name: "Ms. Padmini Janaki | CEO of Mind and Mom",
-            image: "/assets/Events/2022/guest-2.jpg",
+            image: "/src/TedcMit/assets/Events/2022/guest-2.jpg",
             description: ""
           }, {
             name: "Mr. Sivaraman | Founder of deHub for Architects",
-            image: "/assets/Events/2022/guest-3.jpg",
+            image: "/src/TedcMit/assets/Events/2022/guest-3.jpg",
             description: ""
           }, {
             name: "Mr. Senthil Raj | Founder of On the Streets Musical Community",
-            image: "/assets/Events/2022/guest-4.jpg",
+            image: "/src/TedcMit/assets/Events/2022/guest-4.jpg",
             description: ""
           }, 
           {
             name: "Ms Kritanya Krishnamurthy | trainer and a coach",
-            image: "/assets/Events/2024/kirtana.JPG",
+            image: "/src/TedcMit/assets/Events/2024/kirtana.JPG",
             description: ""
           },
           {
             name: "Agnel John | Error Makes Clever",
-            image: "/assets/Events/2024/Angel John.JPG",
+            image: "/src/TedcMit/assets/Events/2024/Angel John.JPG",
             description: ""
           }, 
           { name: "Vikkals of Vikram | Actor",
-            image: "/assets/Events/2024/vikkals.jpeg",
+            image: "/src/TedcMit/assets/Events/2024/vikkals.jpeg",
             description: ""},
 
           { name: "Epaphra | Entrepreneur",
-            image: "/assets/Events/2024/Epaphra.jpeg",
+            image: "/src/TedcMit/assets/Events/2024/Epaphra.jpeg",
             description: ""},
 
           {name: "Mr Sethu Raman | Entrepreneur",
-            image: "/assets/Events/2024/sethu raman.jpeg",
+            image: "/src/TedcMit/assets/Events/2024/sethu raman.jpeg",
             description: ""},
           {
              name: "Mr. Murali Shankarnarayanan",
-            image: "/assets/Events/2021/mike murali.jpeg",
+            image: "/src/TedcMit/assets/Events/2021/mike murali.jpeg",
             description: ""
           },
           {
              name: "Mr. Sumanth C",
-            image: "/assets/Events/2021/sumanth c raman.jpeg",
+            image: "/src/TedcMit/assets/Events/2021/sumanth c raman.jpeg",
             description: ""
           },
           {
              name: "Mr. Vijay Anandh",
-            image: "/assets/Events/2021/Vijay Anandh.jpeg",
+            image: "/src/TedcMit/assets/Events/2021/Vijay Anandh.jpeg",
             description: ""
           },
           {
             name: "Mr. Mathur Sathya",
-            image: "/assets/Events/2022/guest-5.jpg",
+            image: "/src/TedcMit/assets/Events/2022/guest-5.jpg",
             description: ""
           }, {
             name: "Mr. Jayakumar Kanagarajan | Industry leader at Caterpillar",
-            image: "/assets/Events/2022/guest-6.jpg",
+            image: "/src/TedcMit/assets/Events/2022/guest-6.jpg",
             description: ""
           }, {
             name: "Ms. Kanishsri | Para Asian Games 2018 champion",
-            image: "/assets/Events/2022/guest-7.jpeg",
+            image: "/src/TedcMit/assets/Events/2022/guest-7.jpeg",
             description: ""
           },
           {
             name: "Mr. A. Gokulnath | ICLS, the Registrar of Companies",
-            image: "/assets/Events/2023/guest-1.jpeg",
+            image: "/src/TedcMit/assets/Events/2023/guest-1.jpeg",
             description: ""
           }, {
             name: "Mr. Milton Samsundar | artist and educator",
-            image: "/assets/Events/2023/guest-2.jpeg",
+            image: "/src/TedcMit/assets/Events/2023/guest-2.jpeg",
             description: ""
           }, {
             name: "Mr. Vignesh Vellappan | Founder of Seyal Foundation",
-            image: "/assets/Events/2023/guest-3.jpeg",
+            image: "/src/TedcMit/assets/Events/2023/guest-3.jpeg",
             description: ""
           }, {
             name: "Dr. Prahallathan K. K | Co-founder of Bhumi NGO",
-            image: "/assets/Events/2023/guest-4.jpeg",
+            image: "/src/TedcMit/assets/Events/2023/guest-4.jpeg",
             description: ""
           }, {
             name: "Mr. Thozhamaiyan | Founder of Deleted Drafts",
-            image: "/assets/Events/2023/guest-5.jpg",
-            description: ""
-          }, {
-            name: "Mr. Arivarasu Kalainesan | Rapper and lyricist",
-            image: "/assets/Events/2023/guest-6.jpg",
+            image: "/src/TedcMit/assets/Events/2023/guest-5.jpg",
             description: ""
           },
           {
             name: "Mr. Murali Vijayakumar(Biglee) | Coach",
-            image: "/assets/Events/2019/guest-2.jpg",
+            image: "/src/TedcMit/assets/Events/2019/guest-2.jpg",
             description: ""
           }, {
             name: "Mr. Sriram | Founder and CTO - Primefort",
-            image: "/assets/Events/2019/guest-3.jpg",
+            image: "/src/TedcMit/assets/Events/2019/guest-3.jpg",
             description: ""
           }, {
             name: "Mr. Prashanth R | Tamil Cinema Reviewer",
-            image: "/assets/Events/2019/guest-5.jpg",
+            image: "/src/TedcMit/assets/Events/2019/guest-5.jpg",
             description: ""
           }, {
             name: "Mrs. K. Suriya Prabha | Founder and CEO - Youcode Intelligence Solutions",
-            image: "/assets/Events/2019/guest-4.jpg",
+            image: "/src/TedcMit/assets/Events/2019/guest-4.jpg",
             description: ""
           },
           
           {
             name: "Yuva Prakash - Athlete",
-            image: "/assets/Events/2022/Yuvaprakash.jpeg",
+            image: "/src/TedcMit/assets/Events/2022/Yuvaprakash.jpeg",
             description: ""
           },
           {
             name: "Aarthi - SP Robotics",
-            image: "/assets/Events/2022/AArthi_sp robotics.jpeg",
+            image: "/src/TedcMit/assets/Events/2022/AArthi_sp robotics.jpeg",
             description: ""
           },
          
           {
             name: "Ms. Nikila Shankar | Actor",
-            image: "/assets/Events/2024/nikila.JPG",
+            image: "/src/TedcMit/assets/Events/2024/nikila.JPG",
             description: ""
           },
           {name: "Ms Iswarya | Content Creator",
-            image: "/assets/Events/2024/iswarayagp.jpeg",
+            image: "/src/TedcMit/assets/Events/2024/iswarayagp.jpeg",
             description: ""},
           {name: "Ms Jaya Jagdeesh | Entrepreneur",
-            image: "/assets/Events/2024/jaya_jagdeesh.jpeg",
+            image: "/src/TedcMit/assets/Events/2024/jaya_jagdeesh.jpeg",
             description: ""},
          
   ];

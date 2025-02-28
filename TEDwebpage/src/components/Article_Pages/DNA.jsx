@@ -22,7 +22,7 @@ const ImposterSyndromeArticle = () => {
       <p className="text-sm text-gray-500 text-center">By SABHARNA SHANJITHA M - September 18, 2021</p>
 
       <motion.img
-        src="/assets/Articles/dna1.jpg"
+        src="/src/TedcMit/assets/Articles/dna1.jpg"
         alt="Imposter Syndrome"
         className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -49,7 +49,7 @@ const ImposterSyndromeArticle = () => {
       </motion.p>
 
       <motion.img
-        src="/assets/Articles/dna2.jpg"
+        src="/src/TedcMit/assets/Articles/dna2.jpg"
         alt="Feeling of inadequacy"
         className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -70,7 +70,7 @@ The answer to this 21st-century problem of information overload lies in the olde
       </motion.p>
 
       <motion.img
-        src="/assets/Articles/dna3.jpg"
+        src="/src/TedcMit/assets/Articles/dna3.jpg"
         alt="Ways to overcome imposter syndrome"
         className="w-full my-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-500"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -92,7 +92,7 @@ The answer to this 21st-century problem of information overload lies in the olde
       
 
       <motion.div className="text-center mt-6" whileHover={{ scale: 1.1 }}>
-        <Link to="/" className="text-red-500 hover:underline">← Back to Gallery</Link>
+        <Link to="/src/TedcMit/gallery" className="text-red-500 hover:underline">← Back to Gallery</Link>
       </motion.div>
     </motion.div>
     </div>

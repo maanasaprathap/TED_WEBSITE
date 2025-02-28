@@ -8,11 +8,11 @@ import { useState } from "react";
 import { FaBullseye } from "react-icons/fa";
 
 const teamImages = [
-   "/assets/group_images/team 2024.jpeg",
-  "/assets/group_images/team _2024.jpeg",
-   "/assets/group_images/innovate 23.JPG",
-    "/assets/group_images/innovate 22.JPG",
-  "/assets/group_images/team 2019.jpg",
+   "/src/TedcMit/assets/group_images/team 2024.jpeg",
+  "/src/TedcMit/assets/group_images/team _2024.jpeg",
+   "/src/TedcMit/assets/group_images/innovate 23.JPG",
+    "/src/TedcMit/assets/group_images/innovate 22.JPG",
+  "/src/TedcMit/assets/group_images/team 2019.jpg",
 
 ];
 
@@ -101,10 +101,14 @@ const TeamCard = ({ member }) => {
               <img
                 src={member.img}
                 alt={member.name}
-                className="w-full h-full object-cover object-center"
+                className="w-full h-[250px] sm:h-full object-cover object-center"
                 style={{ objectPosition: getObjectPosition(member.name) }}
               />
             ) : null}
+            {member.name} <span>
+              
+            </span><span></span>-
+            {member.position}
           </div>
           
         
@@ -167,7 +171,7 @@ const About = () => {
     { 
       name: "Dr P Prakash",
       position: "President",
-      img: "/assets/Team_Images/Prakash_sir.jpeg",
+      img: "/src/TedcMit/assets/Team_Images/Prakash_sir.jpeg",
       git: "../alice",
       linkedin: "..alice",
       instagram: "..alice",
@@ -175,7 +179,7 @@ const About = () => {
     {
       name: "Selvalingam B",
       position: "Chairperson",
-       img: "/assets/Team_Images/Selvalingam B.jpg",
+       img: "/src/TedcMit/assets/Team_Images/Selvalingam B.jpg",
       git: "../alice",
       linkedin: "..alice",
       instagram: "..alice",
@@ -183,7 +187,7 @@ const About = () => {
     {
       name: "Shanthosh S",
       position: "Vice-Chairperson",
-      img: "/assets/Team_Images/Shanthosh S.jpg",
+      img: "/src/TedcMit/assets/Team_Images/Shanthosh S.jpg",
       git: "../bob",
       linkedin: "..bob",
       instagram: "..bob",
@@ -191,7 +195,7 @@ const About = () => {
     {
       name: "Shalini M",
       position: "Vice-Chairperson",
-      img: "/assets/Team_Images/Shalini M.jpg",
+      img: "/src/TedcMit/assets/Team_Images/Shalini M.jpg",
       git: "../charlie",
       linkedin: "..charlie",
       instagram: "..charlie",
@@ -199,7 +203,7 @@ const About = () => {
     {
       name: "Thennarasu V",
       position: "General Secratory",
-      img: "/assets/Team_Images/Thennarasu V.jpg",
+      img: "/src/TedcMit/assets/Team_Images/Thennarasu V.jpg",
       git: "../david",
       linkedin: "..david",
       instagram: "..david",
@@ -207,7 +211,7 @@ const About = () => {
     {
       name: "Anish H",
       position: "Treasurer",
-      img: "/assets/Team_Images/Anish H.jpg",
+      img: "/src/TedcMit/assets/Team_Images/Anish H.jpg",
       git: "../eve",
       linkedin: "..eve",
       instagram: "..eve",
@@ -215,7 +219,7 @@ const About = () => {
     {
       name: "Thulasidharan C A",
       position: "Head of Public Relations",
-      img: "/assets/Team_Images/Thulasidharan C A.jpg",
+      img: "/src/TedcMit/assets/Team_Images/Thulasidharan C A.jpg",
       git: "../frank",
       linkedin: "..frank",
       instagram: "..frank",
@@ -223,7 +227,7 @@ const About = () => {
     {
       name: "Dhinesh K",
       position: "Head of Public Relations",
-      img: "/assets/Team_Images/Dhinesh K.jpg",
+      img: "/src/TedcMit/assets/Team_Images/Dhinesh K.jpg",
       git: "../grace",
       linkedin: "..grace",
       instagram: "..grace",
@@ -231,7 +235,7 @@ const About = () => {
     {
       name: "Dinesh P",
       position: "Head of Event Management",
-      img: "/assets/Team_Images/Dinesh P.jpg",
+      img: "/src/TedcMit/assets/Team_Images/Dinesh P.jpg",
       git: "../heidi",
       linkedin: "..heidi",
       instagram: "..heidi",
@@ -239,7 +243,7 @@ const About = () => {
     {
       name: "Sriram K",
       position: "Head of Event Management",
-      img: "/assets/Team_Images/Sriram K.JPG",
+      img: "/src/TedcMit/assets/Team_Images/Sriram K.JPG",
       git: "../ivan",
       linkedin: "..ivan",
       instagram: "..ivan",
@@ -247,7 +251,7 @@ const About = () => {
     {
       name: "Dhanush M",
       position: "Head of Design",
-      img: "/assets/Team_Images/Dhanush M.jpg",
+      img: "/src/TedcMit/assets/Team_Images/Dhanush M.jpg",
       git: "../judy",
       linkedin: "..judy",
       instagram: "..judy",
@@ -255,7 +259,7 @@ const About = () => {
     {
       name: "Sripushkalai S",
       position: "Head of Design",
-      img: "/assets/Team_Images/Sripushkalai S.jpg",
+      img: "/src/TedcMit/assets/Team_Images/Sripushkalai S.jpg",
       git: "../kevin",
       linkedin: "..kevin",
       instagram: "..kevin",
@@ -263,7 +267,7 @@ const About = () => {
     {
       name: "Aishwarya I",
       position: "Head of Content Curation",
-      img: "/assets/Team_Images/Aishwarya I.jpg",
+      img: "/src/TedcMit/assets/Team_Images/Aishwarya I.jpg",
       git: "../laura",
       linkedin: "..laura",
       instagram: "../laura",
@@ -271,7 +275,7 @@ const About = () => {
     {
       name: "Manivasagam G",
       position: "Head of Content Curation",
-      img: "/assets/Team_Images/Manivasagam G.jpg",
+      img: "/src/TedcMit/assets/Team_Images/Manivasagam G.jpg",
       git: "../mallory",
       linkedin: "..mallory",
       instagram: "..mallory",
@@ -279,7 +283,7 @@ const About = () => {
     {
       name: "Mukesh L",
       position: "Head of Website Development",
-      img: "/assets/Team_Images/Mukesh L.jpg",
+      img: "/src/TedcMit/assets/Team_Images/Mukesh L.jpg",
       git: "../niaj",
       linkedin: "..niaj",
       instagram: "..niaj",
@@ -288,169 +292,158 @@ const About = () => {
     
   ];
 
-  return ( <div className="p-8 bg-black dark:bg-black ">
+  return (
+  <div className="p-8 bg-black dark:bg-black w-full max-w-full overflow-x-hidden">
     <motion.div
       style={{
-        backgroundImage: "url('/assets/Team_Images/background_image.avif')",
         fontFamily: "'Playfair Display', serif",
       }}
-      className="p-8 min-h-screen bg-cover bg-center text-white"
+      className="p-8 min-h-screen bg-cover bg-center text-white overflow-x-hidden"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
       {/* About Header */}
       <motion.h1
-  initial={{ opacity: 0, scale: 0.9 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.7 }}
-  className="text-4xl font-extrabold text-red-600 drop-shadow-lg text-center"
-  style={{ fontFamily: "'Cutive Mono', monospace" }}
->
-  About TED Club of MIT
-</motion.h1>
-
-
-
-     <div className="flex flex-col items-center gap-6">
-  {/* Preamble Section */}
-  <motion.div
-    initial={{ opacity: 0, y: 10 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.3, duration: 0.7 }}
-    className="bg-transparent p-6 rounded-lg shadow-2xl transition-transform duration-300 hover:shadow-red-500 w-full md:w-2/3"
-  >
-    <motion.h2
-      initial={{ opacity: 0, y: -10 }}
-      animate={{ opacity: 1, y: 0 }}
-      whileHover={{
-        scale: 0.99,
-        textShadow: "0px 0px 8px rgba(239, 68, 68, 0.8)",
-        transition: { duration: 0.3 }
-      }}
-      className="text-4xl font-semibold text-red-400 transition-all hover:text-red-300 inline-flex items-center"
-    >
-      <FaBook size={32} className="mr-2" />
-      PREAMBLE
-    </motion.h2>
-    <motion.p
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.5, duration: 0.5 }}
-      className="mt-3 text-lg leading-relaxed text-white"
-      style={{ fontFamily: "'Cutive Mono', monospace" }}
-    >
-      To cultivate a vibrant community of innovators at MIT by fostering the exchange of ideas through
-local forums we aim to empower students to think critically, share their unique perspectives, and
-engage with diverse voices across various fields. The TED Club of MIT ignites intellectual
-curiosity and broadens student perspectives
-    </motion.p>
-  </motion.div>
-
-  {/* Goal Section */}
-  <motion.div
-    initial={{ opacity: 0, y: 10 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.5, duration: 0.7 }}
-    className="bg-transparent p-6 rounded-lg shadow-2xl transition-transform duration-300 hover:shadow-red-500 w-full md:w-2/3"
-  >
-    <motion.h2
-      initial={{ opacity: 0, y: -10 }}
-      animate={{ opacity: 1, y: 0 }}
-      whileHover={{
-        scale: 0.99,
-        textShadow: "0px 0px 8px rgba(239, 68, 68, 0.8)",
-        transition: { duration: 0.3 }
-      }}
-      className="text-4xl font-semibold text-red-400 transition-all hover:text-red-300 inline-flex items-center"
-    >
-      <FaBullseye size={32} className="mr-2" />
-      GOAL
-    </motion.h2>
-    <motion.p
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.5, duration: 0.5 }}
-      className="mt-3 text-lg leading-relaxed text-white"
-      style={{ fontFamily: "'Cutive Mono', monospace" }}
-    >
-     With a goal of organizing a TEDx event on a huge scale, this club would work to identify the
-inherent talent of students with direct insight and to design a theme to conduct interactive talks.
-The club would also inspire students to think from a broader perspective and introduce them to
-newer developments in all research fields of interest of students. The club would also identify and
-invite potential speakers of various research fields and professions.
-
-    </motion.p>
-  </motion.div>
-</div>
-
-<div className="p-8 bg-black dark:bg-black">
-      <motion.div
-        
-        className="p-8 min-h-screen bg-cover bg-center"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <motion.h1
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7 }}
+        className="text-4xl font-extrabold text-red-600 drop-shadow-lg text-center"
         style={{ fontFamily: "'Cutive Mono', monospace" }}
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7 }}
-          className="text-4xl font-bold text-red-600 text-center mb-6"
-        >
-          Meet Our Journey Makers
-        </motion.h1>
-        <Group_Images />
-     
-  
-<br></br>
-<br></br>
-<br></br>
-      {/* Our Team Section */}
-      <motion.div
-  initial={{ opacity: 0, y: 10 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.3, duration: 0.7 }}
-  className=" transition-transform duration-300 hover:shadow-red-500 mt-6"
->
-<motion.h2
-  initial={{ opacity: 0, y: -10 }}
-  animate={{ opacity: 1, y: 0 }}
-  whileHover={{
-    scale: 0.99,
-    textShadow: "0px 0px 8px rgba(239, 68, 68, 0.8)",
-    transition: { duration: 0.3 }
-  }}
-  transition={{ duration: 0.1 }}
-  className="text-4xl font-semibold text-red-400 transition-all hover:text-red-300 inline-flex items-center"
->
-
-<FaUsers size={32} className="mr-2" />
-  <h1 className="text-3xl font-bold text-red-600">Meet Our Leading Crew</h1>
-</motion.h2>
-
-</motion.div>
-
-
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-        className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6"
       >
-        {teamMembers.map((member, index) => (
-  <div key={index} className="h-70">
-    <TeamCard member={member} />
-  </div>
-))}
+        About TED Club of MIT
+      </motion.h1>
 
-      </motion.div>
-    </motion.div> 
-    </div>
+      <div className="flex flex-col items-center gap-6 w-full max-w-screen">
+        {/* Preamble Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+          className="bg-transparent p-6 rounded-lg shadow-2xl transition-transform duration-300 hover:shadow-red-500 w-full md:w-2/3"
+        >
+          <motion.h2
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            whileHover={{
+              scale: 0.99,
+              textShadow: "0px 0px 8px rgba(239, 68, 68, 0.8)",
+              transition: { duration: 0.3 }
+            }}
+            className="text-4xl font-semibold text-red-400 transition-all hover:text-red-300 inline-flex items-center"
+          >
+            <FaBook size={32} className="mr-2" />
+            PREAMBLE
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="mt-3 text-lg leading-relaxed text-white"
+            style={{ fontFamily: "'Cutive Mono', monospace" }}
+          >
+            To cultivate a vibrant community of innovators at MIT by fostering the exchange of ideas through
+            local forums, we aim to empower students to think critically, share their unique perspectives, and
+            engage with diverse voices across various fields. The TED Club of MIT ignites intellectual
+            curiosity and broadens student perspectives.
+          </motion.p>
+        </motion.div>
+
+        {/* Goal Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.7 }}
+          className="bg-transparent p-6 rounded-lg shadow-2xl transition-transform duration-300 hover:shadow-red-500 w-full md:w-2/3"
+        >
+          <motion.h2
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            whileHover={{
+              scale: 0.99,
+              textShadow: "0px 0px 8px rgba(239, 68, 68, 0.8)",
+              transition: { duration: 0.3 }
+            }}
+            className="text-4xl font-semibold text-red-400 transition-all hover:text-red-300 inline-flex items-center"
+          >
+            <FaBullseye size={32} className="mr-2" />
+            GOAL
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="mt-3 text-lg leading-relaxed text-white"
+            style={{ fontFamily: "'Cutive Mono', monospace" }}
+          >
+            With a goal of organizing a TEDx event on a huge scale, this club would work to identify the
+            inherent talent of students with direct insight and to design a theme to conduct interactive talks.
+            The club would also inspire students to think from a broader perspective and introduce them to
+            newer developments in all research fields of interest of students. The club would also identify and
+            invite potential speakers of various research fields and professions.
+          </motion.p>
+        </motion.div>
+      </div>
+
+      {/* Our Team Section */}
+      <div className="p-8 bg-black dark:bg-black w-full max-w-screen">
+        <motion.div
+          className="p-8 min-h-screen bg-cover bg-center text-white overflow-x-hidden"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.h1
+            style={{ fontFamily: "'Cutive Mono', monospace" }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.7 }}
+            className="text-4xl font-bold text-red-600 text-center mb-6"
+          >
+            Meet Our Journey Makers
+          </motion.h1>
+          <Group_Images />
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.7 }}
+            className="transition-transform duration-300 hover:shadow-red-500 mt-6 w-full"
+          >
+            <motion.h2
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              whileHover={{
+                scale: 0.99,
+                textShadow: "0px 0px 8px rgba(239, 68, 68, 0.8)",
+                transition: { duration: 0.3 }
+              }}
+              transition={{ duration: 0.1 }}
+              className="text-4xl font-semibold text-red-400 transition-all hover:text-red-300 inline-flex items-center w-full"
+            >
+              <FaUsers size={32} className="mr-2" />
+              <h1 className="text-3xl font-bold text-red-600">Meet Our Leading Crew</h1>
+            </motion.h2>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6  w-full h-full overflow-hidden max-w-screen flex justify-center items-center"
+          >
+            {teamMembers.map((member, index) => (
+              <div key={index} className="h-70 w-full">
+                <TeamCard member={member} />
+              </div>
+            ))}
+          </motion.div>
+        </motion.div>
+      </div>
     </motion.div>
-    </div>
-  );
+  </div>
+);
+
 };
 
 export default About;

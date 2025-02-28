@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const eventsData = [
@@ -8,64 +8,64 @@ const eventsData = [
     id: 8,
     title: "Blueprints of success",
     description: "Success is like a vibrant. blank canvas just waiting for you to bring it to life. Your passions, talents, and wildes dreams are the bold colors that will transform it into something extraordinary.",
-    image: "/assets/Events/2024/orginate-24.jpg",
-    link: "/originate_24",
+    image: "/src/TedcMit/assets/Events/2024/orginate-24.jpg",
+    link: "/src/TedcMit/originate'24",
     date: "November 15 2024",
   },
   {
     id: 7,
     title: "Navigating your 20s",
     description: "Navigating your 20s with the most awaited event of TEDcMIT - Innovate 24 happened on February 29 2023 at the Rajam Hall in MIT Campus. As the name suggests, this year's Innovate had an innovative theme",
-    image: "/assets/Events/2024/Innovate-24.jpeg",
-    link: "/innovate'24",
+    image: "/src/TedcMit/assets/Events/2024/Innovate-24.jpeg",
+    link: "/src/TedcMit/innovate'24",
     date: "February 29 2023",
   },
   {
     id: 6,
     title: "One World One Voice",
     description: "The most eagerly awaited flagship event of TEDcMIT - Innovate 23 happened on April 2023 at the Rajam Hall in MIT Campus. As the name suggests, this year's Innovate had an innovative",
-    image: "/assets/Events/2023/innovate-23.jpg",
-    link: "/innovate'23",
+    image: "/src/TedcMit/assets/Events/2023/innovate-23.jpg",
+    link: "/src/TedcMit/innovate'23",
     date: "April 28 2023",
   },
   {
     id: 5,
     title: "Truth and Dare",
     description: "With pandemic putting our lives to a pause for the past two years, The Ted Club of MIT came back with the most awaited, Innovate 2022 which was held in both Offline and Online mode",
-    image: "/assets/Events/2022/INNOVATE'22_Poster.jpg",
-    link: "/innovate'22",
+    image: "/src/TedcMit/assets/Events/2022/INNOVATE'22_Poster.jpg",
+    link: "/src/TedcMit/innovate'22",
     date: "March 19 2022",
   },
    {
     id: 4,
     title: "Past the Impasse",
     description: "Innovate was a unique and successfully conducted event amidst a pandemic making it one of its kind. The event was conducted under the theme Past the Impasse.",
-    image: "/assets/Events/2021/innovate2k21_poster.png",
-    link: "/innovate'21",
+    image: "/src/TedcMit/assets/Events/2021/innovate2k21_poster.png",
+    link: "/src/TedcMit/innovate_21",
     date: "February 12 2021",
   },
   {
     id: 3,
     title: "Art of Failing",
     description: "Ever tried. Ever failed. No matter.Try again. Fail again. Fail better.INNOVATE 2019 returned back with an exciting theme - Art of Failing surrounded by suspense",
-    image: "/assets/Events/2019/innovate-name.jpg",
-    link: "/innovate'19.2.0",
+    image: "/src/TedcMit/assets/Events/2019/innovate-name.jpg",
+    link: "/src/TedcMit/innovate'19.2.0",
     date: "September 15, 2019",
   },
   {
     id: 2,
     title: "Breaking Barriers",
     description: "Professionals are no emergents, they are evolved students; so are the designs - the evolved ideas.... the intercollegiate event - INNOVATE 2019 that glorified the Rajam Hall",
-    image: "/assets/Events/2019/innovate-19-1.0.jpg",
-    link: "/innovate'19",
+    image: "/src/TedcMit/assets/Events/2019/innovate-19-1.0.jpg",
+    link: "/src/TedcMit/innovate'19",
     date: "February 6 2019",
   },
   {
     id: 1,
     title: "Out of the Box",
     description: "Ever wanna time travel? Designed your own world you dreamt of one day? Had a debate on Marvel or DC?INNOVATE 2018 version 2.0 is a TED inspired event",
-    image: "/assets/Events/2018/innovate-2k18.png",
-    link: "/innovate'18",
+    image: "/src/TedcMit/assets/Events/2018/innovate-2k18.png",
+    link: "/src/TedcMit/innovate'18",
     date: "September 15, 2018",
   },
 
