@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { NavLink, Outlet, Link } from "react-router-dom";
 import "./Navbar.css";
-import { FiMenu, FiX } from "react-icons/fi"; // Import icons
+import { FiMenu, FiX } from "react-icons/fi"; // Import icons 
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const scrollToAbout = () => {
-  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
-};
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div>
@@ -32,25 +32,33 @@ const Navbar = () => {
           {/* Navigation Links */}
           <ul
             className={`nav-links ${
-              menuOpen ? "open" : "hidden"
+              menuOpen ? "open bg-black" : "hidden"
             } md:flex md:static md:bg-black`}
           >
             <li>
-  <NavLink
-    to="/src/TedcMit/"
-    onClick={() => {
-      setMenuOpen(false);
-      window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top
-    }}
-  >
-    Home
-  </NavLink>
-</li>
-           <li>
-  <button onClick={scrollToAbout} className="nav-button">
-    About
-  </button>
-</li>
+              <NavLink
+                to="/src/TedcMit/"
+                className={({ isActive }) =>
+                  isActive ? "active" : undefined
+                }
+                onClick={() => {
+                  setMenuOpen(false);
+                  window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top
+                }}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <Link to="/src/TedcMit/#about" onClick={() => {
+                const aboutSection = document.getElementById("about");
+                if (aboutSection) {
+                  aboutSection.scrollIntoView({ behavior: "smooth" }); // Scroll to about section
+                }
+              }}>
+                About
+              </Link>
+              </li>
             <li>
               <NavLink to="/src/TedcMit/events" onClick={() => setMenuOpen(false)}>
                 Events

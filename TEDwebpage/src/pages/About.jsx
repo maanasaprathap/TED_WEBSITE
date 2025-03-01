@@ -66,11 +66,29 @@ const Group_Images = () => {
   };
 
   return (
-    <div className="relative flex justify-center items-center">
-      <FaArrowLeft className="absolute left-0 cursor-pointer text-white" size={30} onClick={prevSlide} />
-      <img src={teamImages[currentIndex]} alt={`Team ${currentIndex + 1}`} className="w-full max-w-lg rounded-lg shadow-lg" />
-      <FaArrowRight className="absolute right-0 cursor-pointer text-white" size={30} onClick={nextSlide} />
-    </div>
+    <div className="relative flex justify-center items-center w-full min-w-[300px] min-h-[300px] overflow-hidden">
+  {/* Left Arrow */}
+  <FaArrowLeft
+    className="absolute left-2 sm:left-4 cursor-pointer text-white hover:text-red-500 transition-colors duration-300 z-10"
+    size={30}
+    onClick={prevSlide}
+  />
+
+  {/* Image */}
+  <img
+    src={teamImages[currentIndex]}
+    alt={`Team ${currentIndex + 1}`}
+    className="w-full h-auto max-h-[400px] sm:max-h-[500px] object-contain rounded-lg shadow-lg transition-all duration-300"
+  />
+
+  {/* Right Arrow */}
+  <FaArrowRight
+    className="absolute right-2 sm:right-4 cursor-pointer text-white hover:text-red-500 transition-colors duration-300 z-10"
+    size={30}
+    onClick={nextSlide}
+  />
+</div>
+
   );
 };
 
@@ -99,26 +117,26 @@ const TeamCard = ({ member }) => {
     <img
       src={member.img}
       alt={member.name}
-      className="w-full max-h-[250px] sm:max-h-full aspect-[4/3] object-cover object-center"
+      className="w-full h-full object-cover object-center"
       style={{ objectPosition: getObjectPosition(member.name) }}
     />
   )}
-  <p className="text-lg font-bold mt-2">{member.name}</p>
-  <p className="text-sm text-gray-500">{member.position}</p>
+
 </div>
 
 
         {/* Back Side */}
-        <div
-  className="absolute inset-0 flex flex-col items-center justify-center bg-red-200 rounded-xl shadow-md p-4"
+     <div
+  className="absolute inset-0 flex flex-col items-center justify-center bg-red-200 rounded-xl shadow-md p-4 overflow-auto"
   style={{
     backfaceVisibility: "hidden",
     transform: "rotateY(180deg)",
   }}
 >
+
   {/* Name */}
   <p
-    className="text-gray-800 text-xl sm:text-2xl md:text-3xl font-bold text-center"
+    className="text-gray-800 text-base text-xs sm:text-sm md:text-base font-bold text-center break-words"
     style={{ fontFamily: "'Caviar Dreams', sans-serif" }}
   >
     {member.name}
@@ -126,22 +144,22 @@ const TeamCard = ({ member }) => {
 
   {/* Position */}
   <p
-    className="text-gray-800 text-sm sm:text-lg md:text-xl mt-2 text-center"
+    className="text-gray-800 text-xs sm:text-sm md:text-base mt-0 text-center break-words"
     style={{ fontFamily: "'Cutive Mono', monospace" }}
   >
     {member.position}
   </p>
 
   {/* Social Links */}
-  <div className="flex space-x-4 mt-4">
+  <div className="flex space-x-3 mt-2">
     {/* <a href={member.git} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">
       <FaGithub size={20} className="sm:size-16" />
     </a> */}
     <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">
-      <FaLinkedin size={20} className="sm:size-16" />
+      <FaLinkedin size={16} className="sm:size-6"  />
     </a>
     <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-500">
-      <FaInstagram size={20} className="sm:size-16" />
+      <FaInstagram size={16} className="sm:size-6"  />
     </a>
   </div>
 </div>
@@ -169,7 +187,7 @@ const About = () => {
       position: "Chairperson",
        img: "/src/TedcMit/assets/Team_Images/Selvalingam B.jpg",
       git: "../alice",
-      linkedin: "..alice",
+      linkedin: "",
       instagram: "https://www.instagram.com/__selva_lingam__?utm_source=qr",
     },
     {
@@ -177,7 +195,7 @@ const About = () => {
       position: "Vice-Chairperson",
       img: "/src/TedcMit/assets/Team_Images/Shanthosh S.jpg",
       git: "../bob",
-      linkedin: "..bob",
+      linkedin: "",
       instagram: "https://www.instagram.com/shanthosh.s_322",
     },
     {
@@ -185,7 +203,7 @@ const About = () => {
       position: "Vice-Chairperson",
       img: "/src/TedcMit/assets/Team_Images/Shalini M.jpg",
       git: "../charlie",
-      linkedin: "..charlie",
+      linkedin: "",
       instagram: "https://www.instagram.com/sha_lini5890",
     },
     {
@@ -193,7 +211,7 @@ const About = () => {
       position: "General Secratory",
       img: "/src/TedcMit/assets/Team_Images/Thennarasu V.jpg",
       git: "../david",
-      linkedin: "..david",
+      linkedin: "",
       instagram: "https://www.instagram.com/_thenn._.arasu30_",
     },
     {
@@ -201,7 +219,7 @@ const About = () => {
       position: "Treasurer",
       img: "/src/TedcMit/assets/Team_Images/Anish H.jpg",
       git: "../eve",
-      linkedin: "..eve",
+      linkedin: "",
       instagram: "https://www.instagram.com/__anish.__.01",
     },
     {
@@ -209,7 +227,7 @@ const About = () => {
       position: "Head of Public Relations",
       img: "/src/TedcMit/assets/Team_Images/Thulasidharan C A.jpg",
       git: "../frank",
-      linkedin: "..frank",
+      linkedin: "",
       instagram: "https://www.instagram.com/im_td.06",
     },
     {
@@ -217,7 +235,7 @@ const About = () => {
       position: "Head of Public Relations",
       img: "/src/TedcMit/assets/Team_Images/Dhinesh K.jpg",
       git: "../grace",
-      linkedin: "..grace",
+      linkedin: "",
       instagram: "https://www.instagram.com/dhineshkarthik30",
     },
     {
@@ -225,7 +243,7 @@ const About = () => {
       position: "Head of Event Management",
       img: "/src/TedcMit/assets/Team_Images/Dinesh P.jpg",
       git: "../heidi",
-      linkedin: "..heidi",
+      linkedin: "",
       instagram: "https://www.instagram.com/dinesh14_._",
     },
     {
@@ -233,7 +251,7 @@ const About = () => {
       position: "Head of Event Management",
       img: "/src/TedcMit/assets/Team_Images/Sriram K.JPG",
       git: "../ivan",
-      linkedin: "..ivan",
+      linkedin: "",
       instagram: "https://www.instagram.com/__k_sriram__",
     },
     {
@@ -241,7 +259,7 @@ const About = () => {
       position: "Head of Design",
       img: "/src/TedcMit/assets/Team_Images/Dhanush M.jpg",
       git: "../judy",
-      linkedin: "..judy",
+      linkedin: "",
       instagram: "https://www.instagram.com/____dhanu__sh/",
     },
     {
@@ -249,7 +267,7 @@ const About = () => {
       position: "Head of Design",
       img: "/src/TedcMit/assets/Team_Images/Sripushkalai S.jpg",
       git: "../kevin",
-      linkedin: "..kevin",
+      linkedin: "",
       instagram: "https://www.instagram.com/_.pushey",
     },
     {
@@ -257,7 +275,7 @@ const About = () => {
       position: "Head of Content Curation",
       img: "/src/TedcMit/assets/Team_Images/Aishwarya I.jpg",
       git: "../laura",
-      linkedin: "..laura",
+      linkedin: "",
       instagram: "https://www.instagram.com/princessfuzzie._0",
     },
     {
@@ -265,7 +283,7 @@ const About = () => {
       position: "Head of Content Curation",
       img: "/src/TedcMit/assets/Team_Images/Manivasagam G.jpg",
       git: "../mallory",
-      linkedin: "..mallory",
+      linkedin: "",
       instagram: "https://www.instagram.com/manivasagan._._",
     },
     {
@@ -273,7 +291,7 @@ const About = () => {
       position: "Head of Website Development",
       img: "/src/TedcMit/assets/Team_Images/Mukesh L.jpg",
       git: "../niaj",
-      linkedin: "..niaj",
+      linkedin: "",
       instagram: "https://www.instagram.com/m_u_k_e_s_h_k_u_t_t_y",
     },
    
@@ -374,22 +392,22 @@ const About = () => {
       </div>
 
       {/* Our Team Section */}
-      <div className="p-8 bg-black dark:bg-black w-full max-w-screen">
+      
         <motion.div
-          className="p-8 min-h-screen bg-cover bg-center text-white overflow-x-hidden"
+          className="p-8 min-h-screen bg-cover bg-center text-white overflow-x-hidden bg-black dark:bg-black w-full max-w-screen"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <motion.h1
-            style={{ fontFamily: "'Cutive Mono', monospace" }}
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7 }}
-            className="text-4xl font-bold text-red-600 text-center mb-6"
-          >
-            Meet Our Journey Makers
-          </motion.h1>
+         <motion.h1
+  style={{ fontFamily: "'Cutive Mono', monospace" }}
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.7 }}
+  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-red-600 text-center mb-4 sm:mb-6"
+>
+  Meet Our Journey Makers
+</motion.h1>
           <Group_Images />
 
           <motion.div
@@ -398,20 +416,15 @@ const About = () => {
             transition={{ delay: 0.3, duration: 0.7 }}
             className="transition-transform duration-300 hover:shadow-red-500 mt-6 w-full"
           >
-            <motion.h2
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              whileHover={{
-                scale: 0.99,
-                textShadow: "0px 0px 8px rgba(239, 68, 68, 0.8)",
-                transition: { duration: 0.3 }
-              }}
-              transition={{ duration: 0.1 }}
-              className="text-4xl font-semibold text-red-400 transition-all hover:text-red-300 inline-flex items-center w-full"
-            >
-              <FaUsers size={32} className="mr-2" />
-              <h1 className="text-3xl font-bold text-red-600">Meet Our Leading Crew</h1>
-            </motion.h2>
+            <motion.h1
+  style={{ fontFamily: "'Cutive Mono', monospace" }}
+  initial={{ opacity: 0, scale: 0.9 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.7 }}
+  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-red-600 text-center mb-4 sm:mb-6 justify-center"
+>
+  Meet Our Leading Crew
+</motion.h1>
           </motion.div>
 
           <motion.div
@@ -421,13 +434,12 @@ const About = () => {
             className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6  w-full h-full overflow-hidden max-w-screen flex justify-center items-center"
           >
             {teamMembers.map((member, index) => (
-              <div key={index} className="h-70 w-full">
-                <TeamCard member={member} />
-              </div>
+              <div key={index} className="w-full aspect-[4/3]"> {/* Responsive aspect ratio */}
+      <TeamCard member={member} />
+    </div>
             ))}
           </motion.div>
         </motion.div>
-      </div>
     </motion.div>
   </div>
 );

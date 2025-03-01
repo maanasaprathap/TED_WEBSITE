@@ -186,7 +186,7 @@ const Speakers = () => {
         className="text-4xl font-bold text-red-600 text-center mb-8"
         style={{ fontFamily: "'Cutive Mono', monospace" }}
       >
-        PAST SPEAKER
+        FORMER PRESENTERS
       </motion.h1>
       <motion.h1
         initial={{ opacity: 0, scale: 0.9 }}
@@ -195,7 +195,7 @@ const Speakers = () => {
         className="text-2xl font-bold text-red-600 text-center mb-8"
         style={{ fontFamily: "'Cutive Mono', monospace" }}
       >
-       TAKE A LOOK AT OUR PAST SPEAKERS WHO INCREASED THE VALUE OF OUR STAGE
+       TAKE A LOOK AT OUR SPEAKERS WHO INCREASED THE VALUE OF OUR STAGE
       </motion.h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">
         {speakers.map((speaker, index) => (

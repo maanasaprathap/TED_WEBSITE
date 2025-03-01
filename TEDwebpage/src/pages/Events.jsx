@@ -107,7 +107,7 @@ const Events = ({ events = eventsData }) => {
         className="text-4xl font-bold text-red-600 text-center mb-8"
         style={{ fontFamily: "'Cutive Mono', monospace" }}
       >
-        PAST EVENTS
+        ARCHIVED EVENTS 
       </motion.h1>  <motion.h1
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
